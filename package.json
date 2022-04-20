@@ -9,6 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.14"
+    "astro": "^1.0.0-beta.14",
+    "@astropub/icons": "^0.1.1"
   }
 }

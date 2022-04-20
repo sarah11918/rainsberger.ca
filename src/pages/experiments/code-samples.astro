@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components';
+import { Code } from 'astro/components';
+import { Prism } from '@astrojs/prism';
+let layoutcode = `
+  ---
+  import BaseLayout from '../layouts/BaseLayout.astro';
+  ---
+  <BaseLayout title="New Page Template!">
+    <main>
+      <p>New page template!</p>
+    </main>
+  </BaseLayout>
+`
+
+
+---
+
+<BaseLayout title="Code Snippet Samples" >
+<main>
+
+
+<h3>Here's some code using the <code>Code</code> component</h3>
+<Code code={layoutcode} lang="astro" theme="material-darker" />
+
+</main>
+</BaseLayout>

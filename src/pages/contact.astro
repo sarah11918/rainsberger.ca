@@ -1,0 +1,35 @@
+---
+import { Markdown } from 'astro/components';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import * as Icon from '@astropub/icons';
+---
+<BaseLayout title = "Contact" >
+  <main>
+    <Markdown>
+    # Contact Sarah
+    </Markdown>
+    <Icon.EnvelopeClosed size = "60" />
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+  
+        <p>
+            <label>Name: <br/><input type="text" class="contact-field" name="name" /></label>   
+        </p>
+   
+        <p>
+            <label>Email: <br/><input type="email" name="email" class="contact-field"/></label>
+        </p>
+
+        <p>
+            <label>Message: <br/><textarea class="contact-message" name="message"></textarea></label>
+        </p>
+        
+        <p>
+            <button type="submit">Send</button>
+        </p>
+</form>
+
+  </main>
+</BaseLayout>

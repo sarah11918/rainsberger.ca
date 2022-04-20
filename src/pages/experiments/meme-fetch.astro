@@ -1,0 +1,56 @@
+---
+import { Markdown } from 'astro/components';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const { title, url, preview, subreddit, author } = await fetch(`https://meme-api.herokuapp.com/gimme/wholesomememes`)
+  .then(response => response.json())
+---
+<BaseLayout title="Single Meme Fetching">
+  <main>
+    <h2>{title}</h2>
+    <p style="font-size: 0.8rem">Submitted to r/{subreddit} by {author}</p>
+    <img src={preview[1]}>
+    <hr>
+    <Markdown>
+    This example shows a one-line fetch call to an API which destructures out some specific data object properties for use in the HTML rendering below.
+    
+    ## The Code:
+
+    ```astro
+    //src/pages/experiments/meme-fetch.astro
+    ---
+    import BaseLayout from '../../layouts/BaseLayout.astro';
+    const { title, url, preview, subreddit, author } = await fetch(`https://meme-api.herokuapp.com/gimme/wholesomememes`)
+      .then(response => response.json())
+    ---
+    <BaseLayout title="Meme Fetching">
+      <main>
+        <h2>{title}</h2>
+        <p style="font-size: 0.8rem">Submitted to r/{subreddit} by {author}</p>
+        <img src={preview[1]}>
+        <hr>
+      </main>
+    </BaseLayout>
+    ```
+    Note that the response object of the API call is of the form:
+
+    ```json
+    {
+      "postLink": "https://redd.it/ovbg8r",
+      "subreddit": "wholesomememes",
+      "title": "Thank you dad",
+      "url": "https://i.redd.it/kx6dpmh6wie71.jpg",
+      "nsfw": false,
+      "spoiler": false,
+      "author": "CaptinDerpII",
+      "ups": 497,
+      "preview": [
+        "https://preview.redd.it/71ytmfud4le71.jpg?width=108\u0026crop=smart\u0026auto=webp\u0026s=6878569f2952e3f8b8dcc1bbaed0cc93068477d9",
+        "https://preview.redd.it/71ytmfud4le71.jpg?width=216\u0026crop=smart\u0026auto=webp\u0026s=e73dd5028251459691ad8f64ceb708440e5d98dd",
+        "https://preview.redd.it/71ytmfud4le71.jpg?width=320\u0026crop=smart\u0026auto=webp\u0026s=5a10265cb01619ef283082b221289670489ddf0e",
+        "https://preview.redd.it/71ytmfud4le71.jpg?width=640\u0026crop=smart\u0026auto=webp\u0026s=3a8cb97a06e7b74aae5ec56db3f89ab7406303a1"
+      ]
+}
+    ```
+    </Markdown>
+  </main>
+</BaseLayout>

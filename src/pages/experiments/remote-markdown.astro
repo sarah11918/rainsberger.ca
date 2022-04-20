@@ -1,0 +1,113 @@
+---
+import { Markdown } from 'astro/components';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const content = await fetch("https://raw.githubusercontent.com/sarah11918/astro-elsa/main/README.md").then((res) => res.text());
+
+const localMarkdown = `# inserted as content
+  This is some extra Markdown, defined in the code fence.
+  - why
+  - no
+  - left
+  - padding?
+`
+---
+<BaseLayout title = "Remote Markdown" >
+  <style>
+    h1, h2, h3 {
+      color: blue;
+    }
+    p {
+      color: green;
+    }
+  </style>
+  
+  <main>
+    <Markdown>
+    ### Regular Markdown
+
+    Here is some Markdown between 2 tags.
+    - It's
+    - all
+    - just
+    - Markdown syntax
+    </Markdown>
+    
+    <hr>
+    
+    <Markdown>
+    ### More Markdown Between Open/Close tags 
+
+    This is some local **Markdown** between two tags. There is also <b>some<b> HTML formatting.
+
+    <p>I'm a p tag<p>
+    <p>I'm a p tag <i>with italics</i><p>
+    </Markdown>
+
+    <hr>
+
+    <Markdown content={localMarkdown} />
+
+    <h5>Fetched Markdown Content</h5>
+    <Markdown content={content} />
+    <Markdown>
+    ```astro
+    //src/pages/experiments/remote-markdown.astro
+    ---
+    import { Markdown } from 'astro/components';
+    import BaseLayout from '../../layouts/BaseLayout.astro';
+    const content = await fetch("https://raw.githubusercontent.com/sarah11918/astro-elsa/main/README.md").then((res) => res.text());
+
+    const localMarkdown = `# inserted as content
+      This is some extra Markdown, defined in the code fence.
+      - why
+      - no
+      - left
+      - padding?
+    `
+    ---
+    <BaseLayout title = "Remote Markdown" >
+    <style>
+      h1, h2, h3 {
+        color: blue;
+      }
+      
+      p {
+        color: green;
+      }
+    </style>
+    
+    <main>
+      <Markdown>
+      ### Regular Markdown
+
+      Here is some Markdown between 2 tags.
+      - It's
+      - all
+      - just
+      - Markdown syntax
+      </Markdown>
+      
+      <hr>
+      
+      <Markdown>
+      ### More Markdown Between Open/Close tags 
+
+      This is some local **Markdown** between two tags. There is also <b>some<b> HTML formatting.
+
+      <p>I'm a p tag<p>
+      <p>I'm a p tag <i>with italics</i><p>
+      </Markdown>
+
+      <hr>
+
+      <Markdown content={localMarkdown} />
+
+      <h5>Fetched Markdown Content</h5>
+      <Markdown content={content} />
+    </main>
+    </BaseLayout>
+    ```
+    </Markdown>
+ 
+  </main>
+</BaseLayout>

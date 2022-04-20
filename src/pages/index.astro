@@ -1,13 +1,24 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title = "HomePage">
+  <main>
+    <h1>Sarah Rainsberger</h1>
+
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLUwoJunFVUl0-53MQ2wr8-kKjtUCgbZ2AS5hJg7pLtMM-vz8bL9jrDEKxx68OKZT8Rndip28WehHVZwX63UrsE13B5O7o2wys7TswfzAXp2YZAkBJVu1hyk2thtIDPg1YW0-FEZi8h5vzV5uLY1WNunhw=w896-h672-no?.jpg" style="max-height:40vh;" alt="A cute chickadee on a branch">
+
+    <p>Sarah photographs birds and codes entirely in the cloud, with no local development environment.</p>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    text-align: center;
+  
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+</style>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components'
+const allPokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=5`);
+const allPokemonResult = await allPokemonResponse.json();
+const allPokemon = allPokemonResult.results;
+---
+<BaseLayout title="Data Fetching" >
+    <main>
+    <h1>Fetching Data from an API call</h1>
+    <h3>Fetch is in the frontmatter</h3>
+    {allPokemon.map((pokemon) => (<p>{pokemon.name}</p>))}
+
+    <Markdown>
+    ```astro
+    //src/pages/experiments/data-fetching.astro
+    ---
+    import BaseLayout from '../../layouts/BaseLayout.astro';
+
+    const allPokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=5`);
+    const allPokemonResult = await allPokemonResponse.json();
+    const allPokemon = allPokemonResult.results;
+    ---
+    <BaseLayout title="Data Fetching" >
+        <h1>Fetching data from an API call</h1>
+        <h3>Fetch is in the frontmatter</h3>
+        {allPokemon.map((pokemon) => (<p>{pokemon.name}</p>))}
+    </BaseLayout>
+    ```
+    </Markdown>
+    </main>
+</BaseLayout>
