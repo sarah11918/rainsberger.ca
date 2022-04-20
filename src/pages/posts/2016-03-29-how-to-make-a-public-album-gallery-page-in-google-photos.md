@@ -1,0 +1,60 @@
+---
+title: How to make a public album gallery page in Google Photos - like Picasa had
+subtitle: ''
+date: '2016-03-29'
+excerpt: >-
+  Today I attempted to create a public photo album gallery page in Google
+  Photos, something PicasaWeb Albums generates automatically for its users but
+  Google Photos does not. Here's what I did:
+hide_header: false
+template: post
+thumb_img_path: images/gcollections.jpg
+layout: ../../layouts/OldMarkdownPostLayout.astro
+tags: ["Google Photos"]
+---
+Can I start yet another post with *"One issue (among many!) that people are having with the transition from Picasa Web Albums to Google Photos is ..."*? Well, here goes nothin'!
+
+Today I attempted to create a public photo album gallery page in Google Photos, something PicasaWeb Albums generates automatically for its users but Google Photos does not. Here's what I did:
+
+## The Problem
+PicasaWeb Albums is (soon to be was) an online photo album service purchased by Google years ago and maintained (for various definitions of maintained) as a Google product ever since. Users could create web-based photo albums with a few different privacy settings available for each individual album. One of the best features of PicasaWeb was the "Public Gallery Page" where all of your public albums were listed. This meant that your friends, families, clients, colleagues etc. could always visit the same page and see every album you'd ever posted.
+
+Google's latest photo endeavour, Photos, still allows you to share albums, but a link must be generated for each individual album you want to share. Unlike PicasaWeb, Google Photos does not automatically create and update a public gallery page when you create a new public album. 
+
+Individual one-off sharing might seem sufficient to share photos with your family from the trip you just took, but what happens when your parents want to see photos from the time they visited you three summers ago? Do you think they still have that URL kicking around? How would they even know what to look for when Google Photo's generated links are long strings of meaningless characters? (For comparison, PicasaWeb created an individual album URL based on the album title. So, if you spotted the link in the wild, you'd know exactly what it was.)
+
+![What PicasaWeb Gallery public page used to look like](https://lh3.googleusercontent.com/cV6DuR8OiPjmfSki7af8AWS9OflEN2qU812E4qTaICtgMzXKKhwUvVNau0_FwfZuNdI0kN9rGcLd0YvnqI6kmnhU1YL2vW20WQxfOuhAN9Axw46BsVfWub47vyCkKhHFhvpRKyaQ-PLDiP1rsndYpOfmZD5Zjqea7BcPK8bfKyAtJ4dDUSF93Gpkv39TMLlRBdlT3dzCIdlhzP-K5oQohU9o9mXB8t9gcZcnBa3slez74QpD-MWNW33-swZf0hvmAvDgc7PBK4uPpH64h5Bvt2n9m90jEAd7jMPw3726ZISj1XLqhE4KWl3yhRK2mXxJlUtZnUabu7lnEn0lxrresv6_kYT28Le15AVkCFHJB2f018BQuF4geWE8uOn-Wog41fag-qCat7s5UKzvRV4oLcC8aoLrIE0RjCbgn1WXWbDYh5IHZrQ5R0RfZ0FmP6jgZn01IR8JRlq1u5zFVMS-0aYfguMMHg1BpfBB64Zl_XDhDx6oxNARdWbDBIpRAPcBLq5URihCMB43rM8fYkfz7ZI-Yt9Uk9_4HzLykAF78sG3baTGPFBLhjCgw8kG_G7A2zZ5tA=w1001-h626-no?.jpg)
+<font size="3">*(PicasaWeb Public Gallery Page)*</font>
+
+Google has claimed that, although the Picasa Desktop software is now unsupported and the PicasaWeb website itself will cease functioning on May 1, they have plans to provide "some" of PicasaWeb's exclusive album features "somewhere" for those of us who have grown accustomed to them. There is no indication whether or not this new online space will include a public gallery page, nor whether the new space provided will be a temporary area or eventually worked into the core features of Google Photos.
+
+## My Attempt at a Solution
+Not knowing whether or not I will have a public online photo gallery page after May 1, I decided to try using Goole Plus Collections to achieve something similar. (Of course similarly, I have no idea how long to expect Google Plus, whose photo features have been streamlined and separated, to continue to function as it currently does. But such is life when using Google for photos!)
+
+Fortunately, I do have (and don't mind having) a Google Plus account. For those who specifically opted out of G+, using a Collection as a public gallery page isn't an option. From Google Plus, I have the option to create a Collection, which near as I can tell, is simply a grouped stream of individual Google Plus posts.
+
+### 1. Create A Collection in Google Plus
+![Navigating to my Collections in Google Plus](https://lh3.googleusercontent.com/Y7H8A7vKHe6-0ZTWeHBWMLisZp0fpEUyvKbrVH4Q1BhUkE2kwpfl6aDX8ID1-pYWu1m5UygyRrTapyLa9_8yB4pRDkrfq3Przs12ddFaGMQczTdWgfLWqdQsf3rMr4kOGQIwokLMnV7PnS71Xx--5_fUuSItClWrjybn1BteuRt4c_AdMuhzy3vDr-9F-CcgrDGHuRv-h4p5_LSEEb48Ns5SzBRmF-l7i3GhQCL8fTR22X30315CbTvOwJ6UWPdC4Gn5qKaRCxphLpRk4t7RdbiP04WByjaHCgcBoamQ5bKuytLZY4o23xb6oenxL5d7Umm0dMlzNVjybf5AHN8qz8cPVqZ-744cufKI5EpQQncG3Q5obIYvOzTsgojyAiLJ6RVKDtyhnhsk4ETNyHVsnxKLjlJI5kpx7HW8lNZ4OYgJ1OJxxOAxOxdL-iM-rnIg4hE3YWhyzfbCTHC-mgvcDsuu53DFMPRtRvGlz2DyXswNKv3PUh1TDOnWhkzeJAFNjWBjt-O_-KwI6x5MXrmum674RRYIIevtYxudVFdAmTpxMw1Obk5EeEX-N1umcb2TI4xRhA=w1229-h646-no)
+<font size="3">*(From my Google Plus page, I can click on "Collections")*</font>
+
+### 2. Share Albums in Google Photos as posts to your Collection
+
+Once in a "Collection," I can click on the "+" button to add a new post. This is just like a regular G+ post, and can be text, an image, or in this particular case, the link to a public Google Photos Album. Conveniently, an Album from Google Photos can also be directly shared into a Collection as a post. So after you've created a Collection, you don't need to be in your Collection in order to add Albums to it.
+![Sharing an Album from Google Photos to Google Plus](https://lh3.googleusercontent.com/8uELD5UtH0FwxN-foXezwMfaWWUve_i2eEnyjRMQTxSopmhMkzf5Aq2IVMR9_c9jizKrmd8D6ylq8t9Fft4rpVFV5Q9_1doVJwUkuYuJ0yzrfYr0Ct2ACQa9U_CviMpJd9Tvbc76jTEUVyZEI3HbVyLPllla8hG16D6DrhdAi2ge8d8rgdN-WsXjPvbgAtRJWjJHyx_AVVfPkip9CrZ7zUyAcYMAazA_a7pBDN7JtFgEMMs_f55sXbw3-mm0Jt0Ixtlot7W9aTjEfDVzIyZTCs23pYliP5IzxZlserH9YQ_6u-7t1TPH94jxDeRhOxIV9voFBbjDDSVeOLuMjZdSBdOPg7C_63O0K3u_0S524apcoZ0pj1I9qKVZR2oQreqkBTBHfyyYkKyf20pR2ueuL8rwZ1RcKq6djJV14Z-oHuaSlamsD6JQrM0JMNfTF0A9sda_fEaGl79Z1K2EXJIvO_1TttOw3O3cTTG7Z_hVl4nEBLcGvMw3lgXutmvvEhCY6lBBDuneSa-0g_2XixX32hxxAOQFlBy_avBnASFF479-MchRB6zUK77awy8V-v-iUFlBZw=w1335-h637-no)
+<font size="3">*(In Google Photos, select an Album and choose to share to Google Plus. Then, inexplicably, select to "Continue to Google+" which takes you not to Google+ at all, but to the next screen)*</font>
+![Be sure to look for the indication of the Collection currently selected to which your album will be shared, and change it if necessary](https://lh3.googleusercontent.com/CAu9hwrMToRGMBII8u_T91Q_auolsLs1j2fDbkP15RsI8-4tt_jFq8dvwzIItjDIo696V_XO5PjEG-BZnkCM-y9gOcTVzmx2lcm6SR6raRprNFp2w9dakXgVzBH9ursdBY5Pc1fk__RRoBJMezSS2K_olbwqGh3bJl2VjnomPEEkBjrc7vdaeEzwE0Evp8VTlSwOinf2SGPK6gTbP_k8kG7oQ1Ic1DvhSnakrcbYtf4tf9Ej_L9zeNrogHPYIygvED8FEKXBsuee75k95QpJB4F6qBbczeL0i9b0nOWqAU4EmvpYUETmdbcRtePxs6me4aK5avgWkutyZLS9X6pSAkj_9qPSWRzb2p_bRn4-Eus86QWgc0BcVC27HxUfPbdCpAQ8di1UkPvbCmDu5jDVqkPeCXX0YVZuWvfzewpQE2xNe3Q0VpbCAvchpVmI0QyEQd7fotqGpZo4UWtJAwyNRP_S8Jw7dxaha5PVM9lWKZfQ2aihUhauQNvevBU30oRlo8MPh_Z-9ZqFJ4PPhyDVrXf36cq-Ewqd5ngqvJycaCTKAm7SpHsQSGVVCNwE2PYkLIukOg=w1331-h643-no)
+<font size="3">*(Be sure that the proper Collection is selected at the top of your post. If not, you can click on it to change which Collection your Album is posted to)*</font>
+
+Unfortunately, this meant in order to create a kind of public gallery page, to "build my collection," I had to spam my G+ timeline with almost 100 individual posts. (I opted to create a Collection for just my travel photos alone, only a third of my existing PicasaWeb albums, due to the volume . . . not only for the sake of my timeline, but because it took a good 4 or 5 clicks to share each album to the Collection and was taking quite a long time.) Each individual album became a separate G+ post that was a contribution to this "Collection." Going forward, this will be less of a problem since posts will be added as albums are created, not dozens at once.
+
+Also, notice the visual difference between my PicasaWeb public gallery page (pictured earlier in this post), whose screenshot shows at least two rows of five thumbnails on my 11" Macbook Air screen, and viewing the contents of a Collection. Since this "Collection" is simply a string of individual posts, I was really struggling to fit two items on my screen at the same time for this screenshot.
+
+![A Collection displays as a string of posts, not like a proper m x n grid of gallery thumbnails](https://lh3.googleusercontent.com/xiAEkDMAxtvplw5IkxOXvIxpqFY2NsM3LrPiZIE9g7xYcFGBRA4JldI-uFsFsNz19Fv3acxatvEeUfeIst93MzQHf1pxAifT8KDd6uSnC1xGwZAAFC_A-s5ICjgOqqE4e9JiV3Q30gAOEbOFN92VFf-6sOWe61ttylsZvYFLzOJDk_EeZPnsfRwD92OLl_O4QYSiX9XP3qYKH0YPU5nvcDlPskLmDdRMBEkSoaDZi3nASTIwGXY4viq94V4o9tiqf0AI8vt0oMAbBPAZ23kn3cuNkAFuxnsYlFYj0h5M6FVX8A-QLEZkMiPB7SslxalIXi8E0sRAX-q4PZWFzEvlMJTonWoA5IAVLz0SdRagS_CVI-5UVzXEvYJ9UtQedl1JKWOkYKI20lf_4z3kwPkF1lKVlZyYj3yMs2moVZqMlZfk_gUdj0QiFzoN6y0-xyXh7c5liqrHNc6z3syjTqbA5Pb02tTQJZ5QcbvesUYAxeBtL5ZVBR0fzDrzLAomgqLAVUy3b92brBTKR_7UjOA8fwshWOA8k1ctgYjqc6aC2cTf97vXnWlmJUSRqxK4OV7hshYZVQ=w1335-h646-no)
+<font size="3">*(Inside each "Collection" I can see each individual album as its own post, complete with title and thumbnail... though not very many of them at once)*</font>
+## Conclusion
+In no particular order, here are my thoughts on this "Collection as Public Album Gallery" experiment:
+
+* <u>It's not automatic</u> - Every time I create a new photo album, I have to navigate to the album in Google Photos, share, choose to Share to Google+, *continue* to Google Plus, verify the post is destined for the right collection (i.e. my self-designated gallery page) and finally click "post." For *an* album, this isn't *so* bad. Doing it for more than a hundred albums to set the Collection up to match what I *already had in PicasaWeb Albums* wasn't great. When a new album is added to PicasaWeb, my PicasaWeb Public Gallery page of albums is automatically updated with no action required on my part.
+* <u>Finer control</u> - Admittedly, it did always bother me that the *first* album visible to viewers on my PicasaWeb Public Gallery page is "Photos from Posts" (as in, G+ posts). This album cannot be deleted as long as you have G+ posts, and will always show up as the first album on your page. I've come close on several occasions to deleting *every* post I ever shared on G+ just so there would be no photos to display and this album would disappear. Using Collections, I can specify exactly which albums show up in this new "gallery" of sorts, and can exclude the ones that Google auto creates. In fact, what I ended up doing was splitting my large collection of albums into a few major categories. This way, people who are only interested in travel photos don't see the albums of family visits.
+* <u>Prominent public listing of Collections</u> - For now, as one must always say with Google products, my Google+ profile page shows my list of Collections. It's like a public gallery of public galleries. It *used* to have a tab for "photos" that visitors could click on, but of course, that has changed. Listing "Collections" on my profile page is admittedly better. Now, instead of a Public Gallery Page, I can simply direct people to my Google+ profile page, and they can see *all* my Collections, which themselves are broadly categorized public galleries of photo albums.
+* <u>I don't know how long this will last, when things will change, and which features will disappear</u> - It seems just when I figure out one system, Google up and changes how everything works. Even as I type this, I know that May 1 will bring *some* kind of changes . . . I just don't know what. So, I continue to live at the mercy of Google's software developers and engineers, and what they think "the next best thing" is.
