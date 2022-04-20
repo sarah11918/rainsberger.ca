@@ -1,6 +1,6 @@
 ---
-setup: |    
-    import MySandpack from '../../components/experiments/MySandpack.jsx'
+# setup: |    
+#     import MySandpack from '../../components/experiments/MySandpack.jsx'
 title: React Sandpack Code Playground in Astro's Markdown!
 author: Sarah
 date: '2022-01-30'
@@ -48,7 +48,7 @@ combined: |
     }
 ---
 
-<MySandpack client:only="react" codez={frontmatter.code}/>
+MySandpack client:only="react" codez={frontmatter.code}
 
 
 Since [Astro .md Markdown files can render React components](/posts/components-in-markdown), I knew I should be able to get this Sandpack code playground to render on this page.

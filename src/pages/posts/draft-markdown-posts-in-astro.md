@@ -1,6 +1,6 @@
 ---
-setup: |
-    import ReactCounter from '../../components/ReactCounter.jsx'
+# setup: |
+#     import ReactCounter from '../../components/ReactCounter.jsx'
 
 title: Astro now has Draft Posts in Markdown!
 author: Sarah
@@ -42,8 +42,8 @@ So, I've taken off the draft flag and you should now actually see this page. If 
 
 ```astro
 ---
-setup: |
-    import ReactCounter from '../../components/ReactCounter.jsx'
+// setup: |
+//     import ReactCounter from '../../components/ReactCounter.jsx'
 
 title: Astro now has Draft Posts in Markdown!
 author: Sarah
@@ -60,4 +60,4 @@ tags: ["astro", "markdown", "blogging"]
 
 Just so we have something else exciting in front matter to show off.  ;)
 
-<ReactCounter client:load/>
+ReactCounter client:load
