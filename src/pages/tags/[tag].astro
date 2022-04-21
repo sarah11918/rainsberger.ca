@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths({ }) {
+  const allPosts = await Astro.glob('../posts/*.md');
+  const sortedPosts = allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+  const allTags = new Set();
+  sortedPosts.map(post => {
+      post.frontmatter.tags && post.frontmatter.tags.map(tag => allTags.add(tag))
+  })
+  
+  return Array.from(allTags).map((tag) => {
+    const filteredPosts = sortedPosts.filter((post) => post.frontmatter.tags.includes(tag))
+    return {
+      params: { tag },
+      props: {
+        posts: filteredPosts
+      }
+    };
+  });
+}
+
+const { posts } = Astro.props;
+const { tag } = Astro.params;
+
+let title = tag; 
+---
+<BaseLayout title={title}>
+    <main>
+        <p style="font-size: 1.5em">Posts tagged with <em><span style="font-weight: bold; color:#3d5262;">{title}</span></em></p>
+        
+        <div style="display:grid; grid-template-columns:12ch auto">
+        {posts.map(post => 
+          <p><span style="font-family: monospace;padding-right:2em;">{post.frontmatter.date}</span></p>
+          <p><a href={post.url}>{post.frontmatter.title}</a></p>
+        )}
+        </div>
+        <hr />
+        <p><a href ="/tags/">See all tags...</a></p>
+    
+    </main>
+</BaseLayout>

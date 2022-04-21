@@ -1,7 +1,7 @@
 ---
 title: "Doc'ing the Docs!"
 author: Sarah
-date: 2022-04-06
+date: "2022-04-06"
 description: "A brief history of what's been going on in the Astro docs."
 layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["astro", "docs", "open source"]
