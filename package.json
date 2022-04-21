@@ -9,7 +9,10 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@astrojs/react": "^0.1.1",
+    "@astropub/icons": "^0.1.1",
     "astro": "^1.0.0-beta.14",
-    "@astropub/icons": "^0.1.1"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }

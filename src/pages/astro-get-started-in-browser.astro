@@ -1,0 +1,118 @@
+---
+import { Markdown } from 'astro/components'
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout title = "Get Started with Astro in your Browser!" >
+  <main>
+  <h1>Get started with Astro in your browser</h1>
+  <Markdown>
+  It's easy to get started with an [Astro](https://astro.build) project right in a browser tab, without setting up a local development environment! 
+
+  There are a few platforms that have been tested and are known to work well with Astro repos. They are similar, but each work a little differently, so you may want to try using each one to see which suits you!
+
+  ## Some Cloud Platform Options for Building an Astro Site
+
+  **[CodeSandbox](https://codesandbox.io)** and **[StackBlitz](https://stackblitz.com)** are both cloud IDEs that let you write your code in a container in a browser tab. Both offer hot module reloading so that as you make changes to your code, you can view a live preview in a smaller pane, or a separate window. Both offer a terminal to run scripts, and both allow for quick adding of npm dependencies through a dedicated "Dependencies" panel. 
+  
+  Logged in to an account, both connect to GitHub, and allow you to open existing repositories, or commit your existing work to a new repository. Both also give you a URL for sharing, so that other people can see your code as well as a URL for the deployed project. 
+
+  One difference, however, is that CodeSandbox runs on a server and StackBlitz uses WebContainers and runs an emulator right in the browser, doing all the work on your computer. Therefore, you may see differences in performance depending on the machine you are using. (While Stackblitz may generally run quicker in the browser, older machines *may* struggle more on StackBlitz.) Try both! They are both great online playgrounds and allow you to have multiple small projects! 
+  
+  (Note that because these projects are stored and hosted with public URLs in your CodeSandbox or StackBlitz accounts, there are limits to the number of files, file sizes etc. and, as I discovered, some of your existing repositories may be too large to open there.)
+
+  **[Gitpod](https://gitpod.io)** is a little different, but also an excellent choice for maintaining an Astro project, especially one with a larger number of files or images. Gitpod is a full developer environment that includes all the features of an online code editor as well as access to all tools that run on Linux: a Linux shell with root/sudo, a file system, the full VS Code editing experience including extensions. It is a fully-functioning, but temporary, development environment. 
+
+  Gitpod opens your existing repository from GitHub, GitLab or BitBucket (or, one of their templates). So, in order to start with an Astro template on Gitpod, you'll first need to make a new, blank repository in any one of these three online platforms. Then, in Gitpod, open that repository and initialize an Astro project.
+
+  **[GitHub CodeSpaces](https://github.com/features/codespaces)** is a newer option at the time of writing, and it is not available to everyone. While some members of the Astro community are able to experiment with and run Astro there, at this moment, I am not! This space will be updated if and when that changes, but you can use and adapt the information here as a general reference for building with Astro online.
+  
+  <h2>Get Started on CodeSandbox or StackBlitz</h2>
+  <h4>Online cloud IDEs with terminal, console, and hot module reloading to see changes as you make them</h4>
+  
+  1. Visit [https://astro.new](https://astro.new) to open one of the many Astro starter templates in either StackBlitz or CodeSandbox. 
+
+  2. Click a link to open a working copy of a starter template.
+
+  3. Fork the repository to create your own copy in CodeSandbox or StackBlitz to allow you to edit and make changes. 
+
+  4. (Optional - to save your work) Log in with a CodeSandbox or StackBlitz account to save your project to your dashboard.
+
+  5. (Optional - to add version control) Add your GitHub account and connect your project to GitHub for version control and further integrations. Note: Both platforms also offer deployment options (Firebase Hosting in StackBlitz, Netlify/Vercel deployment in CodeSandbox). 
+
+  <h2>Get Started On Gitpod</h2>
+  <h4>An entire, ready-to-code developer environment including all tools and binaries that run on Linux.</h4>
+
+  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/fxkkh3oE48Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  1. Create a new, blank repository on GitHub, GitLab or BitBucket. (I usually include a README.md)
+
+  2. Open that new repository in Gitpod using one of the following methods:
+    <ul class="sublist">
+    - install <a href="https://www.gitpod.io/docs/browser-extension">Gitpod's browser extension</a> or <a href="https://www.gitpod.io/docs/browser-bookmarklet">Gitpod's browser bookmarklet</a> to add an "Open in Gitpod" button right on your GitHub/GitLab repository page!
+    
+    - prefix your GitHub repository's full URL with `gitpod.io/#` and enter that URL into a browser window (e.g. `gitpod.io/#https://github.com/sarah11918/sastro`)
+   
+    - log into Gitpod, connect your online source code provider, and choose your repository to open from a drop down menu
+    </ul>
+
+  3. When your repository finishes opening in Gitpod's editor, type `npm init astro` in the terminal window. *(Note: If the terminal pane isn't immediately visible, it may just be minimized at the bottom of the screen. You can select and "drag up" to enlarge it, or use the main menu via View > Terminal.)*
+  
+  4. Follow the instructions to 
+  <ul class="sublist">
+    - overwrite existing files (yes) 
+
+    - choose a starter template from the options provided
+
+    - choose any (and all!) component types you'd like to use: React, Svelte, Solid etc. (These can also be added manually later.) *Read the helpful instructions in the terminal window carefully for using the up and down arrows to navigate, and the left and right arrows to toggle your choices. You can select multiple items!*
+  </ul>
+  
+  5. The final set of instructions will tell you to run `npm install` and then, when that finishes, run `npm run dev`. Execute these final two commands, and your workspace will be ready for coding!
+
+  6. When your Astro starter is up and running, I suggest immediately adding a `.gitpod.yml` file to the root of your project to automatically run these final two steps every time you re-open your Astro project and to instantly open a small preview pane of your Astro site:
+
+  ```yaml
+  gitpod.yml
+
+  tasks:
+    - init: npm install
+      command: npm run start
+
+  ports:
+    - port: 3000
+      onOpen: open-preview
+```
+  To test this: 
+  <ul class="sublist">
+    - close your workspace from the main menu, and do not re-open it.
+
+    - Instead, go back and completely re-open your repository from one of the 3 methods listed above. 
+
+    - This time, the initial script should run and your preview should start immediately.
+    </ul>
+
+7. Commit your changes to local version control, and eventually back to your source repository (or throw them away!) via the Source Control menu item in the left navigation. 
+
+*(Note: any changes you make are saved to this "Workspace" which is a particular instance of your repository. This workspace will save its own state, even between starting/stopping the workspace, but will only push back to your online source code when you choose to commit.* 
+
+*To work on **this** version of your code, re-open the workspace. To go back and start fresh from source again, re-open your repository from one of the three earlier methods. If you don't like what you did in a particular workspace, then just delete (or ignore) the workspace! Unused workspaces will automatically delete after 14 days of inactivity via [Gitpod's Garbage Collection](https://www.gitpod.io/docs/life-of-workspace/#garbage-collection).)*
+
+## Now that you are ready to build an Astro site, be sure to:
+- check out the [Astro docs](https://docs.build.astro) to learn about its features, structure and philosophy
+
+- join the active community on the [Astro Discord](https://astro.build/chat) to ask questions, give feedback and get support.
+
+- play around with Astro pages and build your first Astro component right in [Astro's online playground](https://astro.build/play) where you can see Astro syntax in action, and how it renders as HTML.
+
+- watch a [YouTube playlist of Astro videos](https://www.youtube.com/playlist?list=PLowBAHWxr_2DWoVEV688K4IU5r0FjefRF): a quick 100 second introduction, initial thoughts and walk-throughs, live-coding sessions with Astro, philosophical keynotes, and everything in between!
+
+  </Markdown>
+  </main>
+</BaseLayout>
+
+<style>
+ {
+  color: blue;
+}
+</style>
