@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+
+let title = 'Blog'
+let description = 'All blog posts.'
+
+export async function getStaticPaths({ paginate, rss }) {
+  const allPosts = await Astro.glob('./*.md');
+  const sortedPosts = allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
+  rss({
+    title: "Sarah Rainsberger | Blog",
+    description: "Writing by Sarah Rainsberger",
+    customData: `<language>en-us</language>`,
+    
+    items: allPosts.map((item) => {
+      
+      const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`
+
+      return {
+        title: item.frontmatter.title,
+        description: item.frontmatter.description,
+        link: item.url,
+        pubDate: item.frontmatter.date,
+        customData,
+      }
+    }),
+    
+    dest: "/rss.xml",
+
+  })
+
+    return paginate(sortedPosts, { pageSize: 25 })
+ }
+
+
+let myPosts = await Astro.glob('./*.md');
+const sortedPosts = myPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
+
+---
+<BaseLayout title="All Posts">
+  <main>
+    <h2> Post Archive</h2>
+    <div>
+      {sortedPosts.map((post) => {
+      
+        return (
+          <article>
+          <a href={post.url}><h3>{post.frontmatter.title}</h3></a>
+          <p>{post.frontmatter.description}</p>
+          <p>{post.frontmatter.excerpt}</p>
+          <div style="display:flex;">
+            {post.frontmatter.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><a href={`/tags/${tag}`}>{tag}</a></div>)}
+          </div>
+          <p>{new Date(post.frontmatter.date).toISOString().slice(0, 10)}</p>
+          <a style="font-size: 0.8em;" href={post.url}>Read more</a>
+          <hr>
+        </article>
+      )})}
+    </div>
+  </main>
+</BaseLayout>
