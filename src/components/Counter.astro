@@ -1,0 +1,20 @@
+---
+  import XElement from 'astro-xelement';
+
+  const {Counter, p:Display, button:Button} = XElement
+---
+
+  <Counter
+    @do={(element,store)=>{
+        store.count = 0
+    }}>
+    <Display id="display">0</Display>
+    <Button 
+        @click={(_,store)=>{ display.textContent = ++store.count}}>
+             Increment
+    </Button>
+    <Button 
+        @click={(_,store)=>{ display.textContent = --store.count}}>
+             Decrement
+    </Button>
+</Counter>

@@ -1,0 +1,15 @@
+---
+ import XElement from 'astro-xelement'
+
+  const {p:Timer} = XElement
+---
+
+<Timer @do={(element)=>{
+    function timer(){
+      let time = new Date().toLocaleTimeString()
+      element.textContent = time
+      requestAnimationFrame(timer)
+    }
+    timer()
+}}/>
+

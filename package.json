@@ -12,6 +12,7 @@
     "@astrojs/react": "^0.1.1",
     "@astropub/icons": "^0.1.1",
     "astro": "^1.0.0-beta.14",
+    "astro-xelement": "^3.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   }

@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FlickrPhoto from "../components/FlickrPhoto.astro";
+const allPhotosResponse = await fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=${process.env.FLICKR_API_KEY}&user_id=28692845%40N03&format=json&nojsoncallback=1`);
+const allPhotosResult = await allPhotosResponse.json();
+const allPhotos = allPhotosResult.photos.photo;
+---
+
+<BaseLayout title="Flickr Test Page">
+    <main>
+        <h1>Test of "Get all my public photos" from Flickr using API key</h1> 
+        
+        {allPhotos.map((photo) => (
+            <FlickrPhoto photoprops = {photo} width="250" client:load />
+        ))}
+    </main>
+</BaseLayout>

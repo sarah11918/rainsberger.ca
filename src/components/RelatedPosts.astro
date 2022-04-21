@@ -1,0 +1,44 @@
+---
+export interface Props {
+  content: Record<string, any>;
+}
+
+const { content } = Astro.props as Props;
+
+const relatedPosts = new Set();
+const allPosts = await Astro.glob<Post>('../pages/blog/*.md');
+// Remove current post from list
+const posts = allPosts.filter(p => p.frontmatter.title !== content.title);
+// Get all other posts with the same category
+if (content.category) {
+  posts
+    .filter(({ frontmatter: category }) => category === content.category)
+    .forEach(post => {
+      relatedPosts.add({ ...post.frontmatter, href: post.url })
+    });
+}
+// Get all other posts sharing at least one tag
+if (Array.isArray(content.tags)) {
+  posts
+    .filter(({ frontmatter: { tags = [] } }) => tags.some(tag => content.tags.includes(tag)))
+    .forEach(post => {
+      relatedPosts.add({ ...post.frontmatter, href: post.url });
+    });
+}
+// randomize order of posts
+const related = [...relatedPosts].sort(() => 0.5 - Math.random()).slice(0,4);
+---
+
+<div>
+  <h3>Related Posts</h3>
+  <ul>
+    {related.map(post => (
+      <li>
+        <a href={post.href}>
+          {post.title} ({post.category})
+        </a>
+        <ul>{(post.tags ?? []).map(tag => <li>{tag}</li>)}</ul>
+      </li>
+    ))}
+  </ul>
+</div>
