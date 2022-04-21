@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate, rss }) {
     description: "Writing by Sarah Rainsberger",
     customData: `<language>en-us</language>`,
     
-    items: allPosts.map((item) => {
+    items: sortedPosts.map((item) => {
       
       const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`
 
