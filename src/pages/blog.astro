@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Markdown, Code } from 'astro/components'
+let allPosts = await Astro.glob('../pages/posts/*.md');
+let sortedPosts= allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
+
+---
+<BaseLayout title="My Blog">
+  <main>
+    <h2> Recent Blog Posts </h2>
+    <br />
+   <div>
+      {sortedPosts.slice(0, 5).map((post) => {
+        return (
+        <article>
+          <img src={post.frontmatter.hero} alt={post.frontmatter.alt} width="250"><a href={post.url} class="summary-title"><h3>{post.frontmatter.title}</h3></a>
+          <p>{post.frontmatter.description}</p>
+          <div style="display:flex;">
+            {post.frontmatter.tags.map((item) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><a href={`/tags/${item}`}>{item}</a></div>)}
+          </div>
+          <p>{new Date(post.frontmatter.date).toISOString().slice(0, 10)}</p>
+          <a style="font-size: 0.8em;" href={post.url}>Read more</a>
+          <hr>
+        </article>
+      )})}
+    </div>
+    <h4><a href="/posts">See full post archive ...</a></h4>
+    <hr>
+  
+
+
+      
+    <h3>The Code For This Page:</h3
+
+    <p>This is <code>src/pages/blog.astro</code> which is generated from markdown files located in <code>src/pages/posts/</code> using: </p>
+
+<Markdown>
+```astro
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Markdown } from 'astro/components'
+let allPosts = await Astro.glob('../pages/posts/*.md');
+allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date(a.frontmatter.date));
+---
+<div>
+    {allPosts.slice(0, 5).map((post) => (
+    <article>
+        <img src={post.frontmatter.hero} alt={post.frontmatter.alt} width="100"><a href={post.url}><h3>{post.frontmatter.title}</h3></a>
+        <p>{post.frontmatter.description}</p>
+        
+        <div>
+        {post.frontmatter.tags.map((item) => <div><a href={'/tags/${item}'}>{item}</a></div>)}
+        </div>
+        
+        <a href={post.url}>Read more</a>
+        <hr>
+    </article>
+    ))}
+</div>
+```
+</Markdown>
+
+  </main>
+</BaseLayout>
