@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Button from '../../components/experiments/Button.jsx';
+import Counter from '../../components/experiments/Counter.jsx';
+import Characters from '../../components/experiments/Characters.jsx';
+import { Markdown } from 'astro/components';
+const characters = await fetch('https://finalspaceapi.com/api/v0/character?limit=5')
+ .then((res) => res.json());
+---
+<BaseLayout title="React Component Playground" >
+<main>
+
+<h2>Here are some React Components...</h2>
+
+<Button client:visible />
+<hr>
+<Counter client:visible />
+<hr>
+<Characters characters={characters} client:visible />
+
+    <Markdown>
+      ## Here is the code for this page:
+      ```astro
+      //src/pages/experiments/react-components.astro
+      ---
+      import BaseLayout from '../../layouts/BaseLayout'
+      import Button from '../../components/Button.jsx';
+      import Counter from '../../components/Counter.jsx';
+      import Characters from '../../components/Characters.jsx';
+      import { Markdown } from 'astro/components';
+
+      const characters = await fetch('https://finalspaceapi.com/api/v0/character?limit=5')
+      .then((res) => res.json());
+      ---
+      <BaseLayout title="React Component Playground" >
+        <main>
+
+          <h2>Here are some React Components...</h2>
+
+          <Button client:visible />
+          <hr>
+          <Counter client:visible />
+          <hr>
+          <Characters characters={characters} client:visible />
+
+          <Markdown>
+            ## Here is the code for this page:
+            (code here)
+          </Markdown>
+        </main>
+      </BaseLayout>
+      ```
+    </Markdown>
+  </main>
+</BaseLayout>

@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Form2 from '../../components/experiments/Form2.jsx';
+import {DATA} from '../../components/experiments/CurrencyApp.jsx';
+import {Markdown} from 'astro/components';
+---
+
+<BaseLayout title="Passing Props">
+  <main>
+  <h2>Importing data from one React component, then passing it as props to a different React component.</h2>
+
+    <p>This .astro page imports the DATA object from the React Context example, and passes the currency symbol prop into a version of the Form component that accepts currency. This property is used as the default currency value in the form when state is created, and so the currency filed is pre-filled when the form is rendered.</p>
+    <Form2 symbol={DATA.currency} client:load />
+
+    <Markdown>
+    The code for this astro page:
+
+    ```astro
+    //src/pages/experiments/passing-props.astro
+    ---
+    import BaseLayout from '../../layouts/BaseLayout';
+    import Form2 from '../../components/experiments/Form2.jsx';
+    import {DATA} from '../components/experiments/CurrencyApp.jsx';
+    ---
+
+    <BaseLayout title="Passing Props">
+      <main>
+        <h2>Importing data ....</h2>
+
+        <p>This .astro page imports the DATA ...</p>
+
+        <Form2 symbol={DATA.currency} client:load />
+
+      </main>
+    </BaseLayout>
+    ```
+
+    Note: Now, CurrencyApp must export BOTH its CurrencyApp function AND the DATA object. (Instead of export default Currency App)
+
+    ```js
+    import React from "react";
+    import CurrencyContext from "../components/experiments/CurrencyContext.jsx";
+    import Books from "../components/experiments/Books.jsx";
+
+    const DATA = {
+      list: [
+        {
+          id: "1",
+          title: "The Road to React",
+          price: 19.99
+        },
+        {
+          id: "2",
+          title: "The Road to GraphQL",
+          price: 29.99
+        },
+        {
+          id: "3",
+          title: "The Road to GastbyJS",
+          price: 29.99
+        },
+        {
+          id: "4",
+          title: "The Rocket to Astro!",
+          //title: 'The Voyage to Astro!',
+          price: 29.99
+        }
+      ],
+
+      buy: () => {
+        alert("Sorry, you can't buy. This is just a test!");
+      },
+
+      currency: "$"
+    };
+
+    const CurrencyApp = () => {
+      return (
+        <CurrencyContext.Provider value={DATA}>
+          <Books />
+        </CurrencyContext.Provider>
+      );
+    };
+
+    export {CurrencyApp, DATA};
+    ```
+    And, Form2 now both accepts a currency symbol as a prop, and uses this value when creating state for its own data that it holds:
+
+    ```js
+    import React, { useState } from "react";
+
+    const Form2 = ({ symbol }) => {
+      const [data, setData] = useState({
+        name: "",
+        language: "",
+        currency: symbol
+      });
+
+      const handleChange = (event) => {
+        setData({ ...data, [event.target.name]: event.target.value });
+      };
+
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(
+          \`Thanks, ${data.name}! I'll speak to you in ${data.language} and you'll pay in ${data.currency}.\`
+        );
+        setData({ name: "", language: "" });
+      };
+
+      return (
+        <>
+          <h3>My Form with Props</h3>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">First name</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                value={data.name}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="language">Preferred language</label>
+              <br />
+              <input
+                type="text"
+                name="language"
+                value={data.language}
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="currency">Preferred currency</label>
+              <br />
+              <input
+                type="text"
+                name="currency"
+                value={data.currency}
+                onChange={handleChange}
+              />
+            </div>
+
+            <button>Submit</button>
+          </form>
+        </>
+      );
+    };
+
+    export default Form2;
+    ```
+    </Markdown>
+  </main>
+</BaseLayout>

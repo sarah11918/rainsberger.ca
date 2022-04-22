@@ -10,10 +10,18 @@
   },
   "devDependencies": {
     "@astrojs/react": "^0.1.1",
+    "@astrojs/svelte": "^0.1.1",
     "@astropub/icons": "^0.1.1",
+    "accessible-astro-components": "^1.4.5",
     "astro": "^1.0.0-beta.14",
     "astro-xelement": "^3.2.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "svelte": "^3.47.0"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@codesandbox/sandpack-react": "^0.19.0",
+    "graphql": "^16.2.0"
   }
 }

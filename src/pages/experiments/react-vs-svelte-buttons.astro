@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ButtonCounter from '../../components/experiments/ButtonCounter.svelte';
+import ReactButtonCounter from '../../components/experiments/ReactButtonCounter.jsx';
+---
+<BaseLayout title="React vs Svelte Button Counters">
+  <main>
+    <ButtonCounter client:load />
+    <ReactButtonCounter client:load />
+
+    <p>Write up comparing components to come!</p>
+    <p>From: <a href="https://www.twilio.com/blog/react-svelte-comparing-basics">Ashley Boucher's Tutorial</a></p>
+  </main>
+</BaseLayout>
