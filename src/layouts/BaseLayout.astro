@@ -2,7 +2,6 @@
 import * as Icon from '@astropub/icons';
 import '../styles/global.css';
 import '../styles/nav.css';
-import "@fontsource/poppins"
 const {title, description, postURL, hero, canonicalURL, alt} = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
@@ -31,7 +30,7 @@ const imageAlt = alt ?? site.image.alt;
         <link rel="stylesheet" href="/styles/sandpack.css" /> -->
     
         <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"> 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism-tomorrow.css"> -->
    
 
         <meta name="description" content={title}>

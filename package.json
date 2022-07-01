@@ -22,7 +22,6 @@
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@astrojs/rss": "^0.2.0",
-    "@fontsource/poppins": "^4.5.8",
     "graphql": "^16.2.0"
   }
 }
