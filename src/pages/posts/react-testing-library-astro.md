@@ -36,7 +36,6 @@ My guess is that most people will `npm install @testing-library/react` but you k
     "node": "^14.13.1",
     "npm": "^7.22.0",
     "react": "^17",
-    "react-day-picker": "7.4.10",
     "react-router-dom": "^5.2.0",
     "react-twitter-widgets": "1.10.0",
     "rollup-plugin-terser": "7.0.2",

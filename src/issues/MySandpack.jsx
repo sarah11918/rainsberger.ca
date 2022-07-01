@@ -1,5 +1,5 @@
-import { Sandpack } from "@codesandbox/sandpack-react";
-import "@codesandbox/sandpack-react/dist/index.css";
+// import { Sandpack } from "@codesandbox/sandpack-react";
+// import "@codesandbox/sandpack-react/dist/index.css";
 
 const indexjs = `import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
@@ -47,21 +47,21 @@ const code = `export default function App() {
   return <h1>Hello World</h1>
 }`;
 
-function MySandpack({codez = code}) {
-  return (
-    <>
-      <h1>Code Playground</h1>
-     
-      <Sandpack 
-      template="react"
-      files={{
-        "/App.js": codez,
-        "/index.js": indexjs,
-        "/styles.css": styles,
-        "/index.html": indexhtml,
-      }}
-       />
-    </>
-  )
-}
-export default MySandpack;
+//function MySandpack({codez = code}) {
+ // return (
+//     //<>
+//       <h1>Code Playground</h1>
+// {/*      
+//       <Sandpack 
+//       template="react"
+//       files={{
+//         "/App.js": codez,
+//         "/index.js": indexjs,
+//         "/styles.css": styles,
+//         "/index.html": indexhtml,
+//       }}
+//        />
+//     </> */}
+ //)
+ //}
+//export default MySandpack;

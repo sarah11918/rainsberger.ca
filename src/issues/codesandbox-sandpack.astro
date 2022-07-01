@@ -1,55 +1,56 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import MySandpack from '../../components/experiments/MySandpack.jsx';
-import {Markdown} from 'astro/components';
-import { Code } from 'astro/components';
-const pageCode = `
-      ---
-      import BaseLayout from '../../layouts/BaseLayout.astro'
-      import MySandpack from '../../components/experiments/MySandpack.jsx';
+//import BaseLayout from '../../layouts/BaseLayout.astro'
+// import MySandpack from '../../components/experiments/MySandpack.jsx';
+// import {Markdown} from 'astro/components';
+// import { Code } from 'astro/components';
+// const pageCode = `
+//       ---
+//       import BaseLayout from '../../layouts/BaseLayout.astro'
+//       import MySandpack from '../../components/experiments/MySandpack.jsx';
 
-      const codez = \`export default function App() {
-        return (
-          <div>
-            <h1>Hello Sandpack on my site!</h1>
-            <p>This is the custom starting code.</p>
-            <p>Now, I can start with custom examples.</p>
-          </div>
-        )
-      }\`
-      ---
-      <BaseLayout title="Sandpack code playground">
-        <main>
-          <h1>Sandpack embedded code playground</h1>
+//       const codez = \`export default function App() {
+//         return (
+//           <div>
+//             <h1>Hello Sandpack on my site!</h1>
+//             <p>This is the custom starting code.</p>
+//             <p>Now, I can start with custom examples.</p>
+//           </div>
+//         )
+//       }\`
+//       ---
+//       <BaseLayout title="Sandpack code playground">
+//         <main>
+//           <h1>Sandpack embedded code playground</h1>
           
-          <MySandpack 
-          client:only="react"
-          codez={codez} />
+//           <MySandpack 
+//           client:only="react"
+//           codez={codez} />
 
-        </main>
-      </BaseLayout>
-    `
+//         </main>
+//       </BaseLayout>
+//     `
 
-const codez = `export default function App() {
-  return (
-    <div>
-      <h1>Hello Sandpack on my site!</h1>
-      <p>This is the custom starting code.</p>
-      <p>Now, I can start with custom examples.</p>
-    </div>
-  )
-}`
----
-  <BaseLayout title="Sandpack code playground">
-    <main>
-      <h1>Sandpack embedded code playground</h1>
-      <MySandpack 
-      client:only="react"
-      codez={codez} />
+// const codez = `export default function App() {
+//   return (
+//     <div>
+//       <h1>Hello Sandpack on my site!</h1>
+//       <p>This is the custom starting code.</p>
+//       <p>Now, I can start with custom examples.</p>
+//     </div>
+//   )
+// }`
+//---
+<p></p>
+// <!-- <BaseLayout title="Sandpack code playground">
+//     <main> -->
+//       <h1>Sandpack embedded code playground</h1>
+//       <MySandpack 
+//       client:only="react"
+//       codez={codez} /> -->
 
-      <p><a href="/posts/react-sandpack-code-playground-in-astro-markdown">See the full blog post about using this Sandpack React component in Markdown!</a><p>
+//       <p><a href="/posts/react-sandpack-code-playground-in-astro-markdown">See the full blog post about using this Sandpack React component in Markdown!</a><p>
 
-      <h2>Here's the code for this page:</h2>
-      <Code lang="astro" code={pageCode} >
-  </main>
-</BaseLayout>
+//       <h2>Here's the code for this page:</h2>
+//       <!-- <Code lang="astro" code={pageCode} > -->
+//   <!-- </main>
+// </BaseLayout> -->
