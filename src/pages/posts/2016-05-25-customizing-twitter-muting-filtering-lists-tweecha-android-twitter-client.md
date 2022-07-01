@@ -1,8 +1,10 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: >-
   Twitter Muting, Filtering And Lists with Tweecha on Android
 subtitle: ''
 date: '2016-05-25'
+pubDate: '2016-05-25'
 excerpt: >-
   There are two major criteria I have for a Twitter client, given the way that I
   use Twitter: keep track (and hold on to a lengthy backlog) of unread tweets;
@@ -12,7 +14,6 @@ excerpt: >-
   later, I'm pleased to report that it also does the second very well.
 hide_header: false
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Twitter"]
 ---
 There are two major criteria I have for a Twitter client, given the way that I use Twitter.

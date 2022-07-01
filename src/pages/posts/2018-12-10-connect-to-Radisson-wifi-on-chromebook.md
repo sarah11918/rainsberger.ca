@@ -1,12 +1,13 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: How to Connect a Chromebook to Radisson Hotel Wifi
 subtitle: null
 description: "Can't connect to wifi on your Chromebook when you stay at Radisson hotel because of their captive portal? No, it's *not* just a matter of finding a non-SSL page to start your connection like with many other captive portals. Here's what I did to approximate a working wifi connection on my Chromebook at Radisson hotels. Maybe someone from Radisson will see this and upgrade their wifi system!"
 date: '2018-12-10'
+pubDate: '2018-12-10'
 thumb_img_path: /images/ScreenshotRadissonAutoRefreshPlusSettingsBecauseRedirect.png
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["solutions"]
 ---
 

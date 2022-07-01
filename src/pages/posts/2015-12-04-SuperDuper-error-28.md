@@ -1,14 +1,15 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: 'How I fixed SuperDuper Error Type 28: no space left on device'
 subtitle: ''
 date: '2015-12-04'
+pubDate: '2015-12-04'
 excerpt: >-
   The story of "Error 28: no space left on device" means when you're quite
   certain your external hard drive is large enough to backup your laptop's
   internal hard drive.
 hide_header: false
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["solutions"]
 ---
 Yesterday, (aka "The Day that Tech Stopped Working") after a string of tech annoyances, I figured the safest thing to do was to quickly run a backup. (I don't have automated backups, but I do run a SuperDuper backup a few times per month, and especially whenever I've made major changes to my file system.) Somewhat befitting the crazy I had, for the first time, running a SuperDuper backup failed. 

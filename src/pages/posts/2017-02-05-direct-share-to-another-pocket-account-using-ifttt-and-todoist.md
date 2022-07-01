@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: >-
   Creating your own Direct-Share-to-Friend feature in Pocket using IFTTT and
   Todoist
@@ -14,10 +15,10 @@ excerpt: >-
   article in Pocket for Joe, and it will automatically show up right in his
   Pocket reading list. This is how I did it...
 date: '2017-02-05'
+pubDate: '2017-02-05'
 thumb_img_path: images/pocket1.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["solutions"]
 ---
 [Pocket](https://getpocket.com/) is our "read it later" service of choice. Unfortunately, its current sharing options leave a little something to be desired. 

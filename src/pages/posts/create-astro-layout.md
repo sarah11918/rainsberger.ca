@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "Creating an Astro layout - screencast and transcript"
 author: Sarah
 date: '2022-01-20'
+pubDate: '2022-01-20'
 description: This is a screencast and transcript of refactoring one of the basic Astro examples to create an initial BaseLayout component.
-layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["videos", "astro"]
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLX90l9OOIH0Tarqdl3BJoMbMedPlnVToVh4N930PvJqT10e2udS-pM0druuYfwTapGcS_YFWAZ0J2CtewEA0OkQUkyRp4qOlePDM1MfJl6VyBHnnhN-fIpWKWvoN2JM84A-3kYcaF9ecmEjOsqEqi99Pw=w250-no?"
 alt: "Gitpod workspace showing an Astro Layout component"

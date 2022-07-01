@@ -1,13 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Updating Node version to fix Gatsby issues in CodeSandbox
 author: Sarah Rainsberger
 subtitle: 'Just another adventure in #CodingOnAChromebook!'
 date: '2021-04-08'
+pubDate: '2021-04-08'
 description: "It just didn't make sense that no online editors were building Gatsby projects, so I decided to dive in."
 hide_header: false
 template: post
 thumb_img_path: images/gatsbysandboxerror1.png
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: 2021-04-08-updating-codesandbox-config-gatsby-node-version-12
 tags: ["blogging", "solutions"]
 ---

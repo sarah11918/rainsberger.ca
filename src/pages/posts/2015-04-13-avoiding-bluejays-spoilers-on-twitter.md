@@ -1,9 +1,10 @@
 ---
-title: Avoiding Toronto Blue Jays baseball spoilers on Twitter
+layout: ../../layouts/OldMarkdownPostLayout.astro
+title: 'Avoiding Toronto Blue Jays baseball spoilers on Twitter'
 subtitle:
 date: "2015-04-13"
+pubDate: "2015-04-13"
 excerpt: "I've been meaning to write to explain exactly how my super-awesome-spoiler-proof Twitter system works.  \"So, you mute keywords and hashtags?\" Oh, if only it were that simple!"
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Twitter"]
 ---
 

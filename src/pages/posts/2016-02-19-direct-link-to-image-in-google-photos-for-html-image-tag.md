@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: >-
   How to obtain a direct link to an image in Google Photos for creating html  
   image tag
@@ -8,11 +9,11 @@ excerpt: >-
   Web Albums to Google Photos is how to directly link to a photo from Google
   Photos.
 date: '2016-02-19'
+pubDate: '2016-02-19'
 thumb_img_path: images/GooglePhotosShareGetLink.png
 hide_header: false
 template: post
 content_img_path: images/chromebookleaf.jpg
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Google Photos"]
 ---
 One issue (among many!) that people are having with the transition from Picasa Web Albums to Google Photos is how to directly link to a photo from Google Photos.

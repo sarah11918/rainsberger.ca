@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Making a reusable Astro component from CodePen's embed HTML
 author: Sarah
 date: '2021-09-16'
+pubDate: '2021-09-16'
 description: Since interactive CodePen embedded workspaces are sometimes better, and more accessible ways to blog about code, I thought I'd extract the patterns in the HTML and practice making a little Astro component!
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: reusable-astro-component
 tags: ["astro"]
 ---

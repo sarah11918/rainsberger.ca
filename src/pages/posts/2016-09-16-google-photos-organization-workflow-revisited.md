@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: (Google) Photo Organization Workflow - Revisited
 subtitle: ""
 excerpt: >-
@@ -6,8 +7,7 @@ excerpt: >-
   trying to come up with a decent Google Photos workflow and Picasa alternative,
   and here's what I've settled on for now
 date: "2016-09-16"
-
-layout: ../../layouts/OldMarkdownPostLayout.astro
+pubDate: "2016-09-16"
 tags: ["Google Photos"]
 ---
 

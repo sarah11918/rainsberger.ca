@@ -47,7 +47,7 @@ I'm perhaps less of a "photographer" and more of a "photo management addict." I 
 <li>In Picasa, I "star" all the photos to be uploaded to a Google (PicasaWeb/Photos) online photo album and add any annotations.</li>
      <ul> 
         <li>Picasa is especially nice for this purpose because you can use its "starring" function to toggle which photos are or are not uploaded to an online photo album corresponding to your local folder.</li>
-        <li>Using this method, all of my Copenhagen photos, for example, can be kept locally in a single folder, even if I only intend to upload <em>some</em> of these photos. I do not need to create a separate album or collection of photos that I wish to share.</li>
+        <li>Using this method, all of my Copenhagen photos, for example, can be kept locally in a single folder, even if I only intend to upload some of these photos. I do not need to create a separate album or collection of photos that I wish to share.</li>
      </ul>
 <img src="https://lh3.googleusercontent.com/SpjbAD64DV0_OSzjvSkJyzChYW1S5nAJwUyE9Pe-JRF4TTJCq_6PO8_QPZE-DzlS-5_ezA3cjy0B036kSOF3jfGNmg7eDfnmiU8Oa-wOUZfLtQHgoNukYZR--KXmgNYqObJ8W_s4SCe9Hz_fXsBuzMuUkU8Skm-1riwIh64EogcYqyAKvg0Om-jVv-1WhzgVfc3bzI_OhoxJcFrzWAhWDQuh7WYfO168S_SLPU4jOHQaq5YpzTNstM0rHFm8cFjXNJg3hBftHS4nCjIuO-au2QRlVAeZyVZSPR8oACjeme1S7q2bEwoEJv4NGlE1x4rOlnwAhi1jy1AVI1CJduxE9Lup7EViJa00pp-nEubhRssRFwY4QRZ8XJAgnn2-GPENe0CjTLrypFcObInSE0IctgmqTaEmz-5EJCEom2lpx1EsFVJhPnLaUt2UdnuXrwTwQyP1ZFtMFkwHaO9d_DDmzC8TdpONdNhdtFo_tB0sWWstE1UTr9x9SgvsL7cxT16GUZ8wfNQlpIwMcBLSoJz95Jjz_yU4ObaVLCuF_T7VZKLIKwT9vmxs6uTFztFHQxff5jgCbw=w1196-h646-no?.jpg"/>
 

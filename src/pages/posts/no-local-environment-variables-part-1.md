@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Local environment variables -- without the local environment
 author: Sarah
 date: '2021-10-19'
+pubDate: '2021-10-19'
 description: I make use of APIs for accessing both my eBird and Flickr data, but each of these require authenticated access with a secret key. Here's how I can use environment variables while developing on my Chromebook in Gitpod, and deploying to production in Netlify without a local environment in which to store them!
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: no-local-environment-variables-part-1
 tags: ["no local dev environment"]
 ---

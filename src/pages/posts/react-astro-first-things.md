@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Getting started with React components in Astro? Check these things!
 author: Sarah
 date: '2021-10-13'
+pubDate: '2021-10-13'
 description: Yes, you can write and render your React components in your Astro page. But remember, Astro *isn't* React, and you might be getting error messages when you *totally know* your React component should work. It's not complicated to establish the Astro-React relationship, but you might not be used to doing these things. . . 
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: react-astro-first-things
 tags: ["react", "astro"]
 ---

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: My new (Google) Photo Organization Workflow
 subtitle: ""
 excerpt: >-
@@ -8,10 +9,10 @@ excerpt: >-
   had to move on. I'm still trying to recover, but here's more or less how
   things go now . . .
 date: "2016-10-09"
+pubDate: "2016-10-09"
 thumb_img_path: images/picasatweet.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Google Photos"]
 ---
 

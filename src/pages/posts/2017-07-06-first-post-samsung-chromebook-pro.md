@@ -1,14 +1,15 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: First Jekyll post written on the Samsung Chromebook Pro!
 subtitle: ''
 excerpt: >-
   This is my first attempt to draft and publish a new post entirely on this
   machine...
 date: '2017-07-06'
+pubDate: '2017-07-06'
 thumb_img_path: images/chromebookleaf.jpg
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["blogging"]
 ---
 The Samsung Chromebook Pro is here!

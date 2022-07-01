@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "React to XElement in Astro: sBird to xBird"
 author: Sarah
 date: '2022-03-07'
+pubDate: '2022-03-07'
 description: aFuzzyBear and I have started a community, build-in-public project where we take my React-in-Astro sBird app and recreate all the same functionality using XElement, natively in Astro! The first video is now up on YouTube.
-layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["videos", "astro", "xelement"]
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLXDqxBx3MfCVxblhM_-aNmnTYrbQfWLjuLXSdFvUESmZNtFT8K1UcldfF_m5QVOVxIHPzc_j3MxL4z268bq0QjOVQ6nFKC5vrhUJo54N3i80TF5uLEsltfChLvzckvA54jHTKOwVSiGmGYjsrFTZSMnBA=w250-no?"
 alt: "Video editing software"

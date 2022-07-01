@@ -8,27 +8,27 @@ export async function getStaticPaths({ paginate, rss }) {
   const allPosts = await Astro.glob('./*.md');
   const sortedPosts = allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 
-  rss({
-    title: "Sarah Rainsberger | Blog",
-    description: "Writing by Sarah Rainsberger",
-    customData: `<language>en-us</language>`,
+  // rss({
+  //   title: "Sarah Rainsberger | Blog",
+  //   description: "Writing by Sarah Rainsberger",
+  //   customData: `<language>en-us</language>`,
     
-    items: sortedPosts.map((item) => {
+  //   items: sortedPosts.map((item) => {
       
-      const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`
+  //     const customData = `<guid isPermaLink="true">https://rainsberger.ca${item.url}</guid>`
 
-      return {
-        title: item.frontmatter.title,
-        description: item.frontmatter.description,
-        link: item.url,
-        pubDate: item.frontmatter.date,
-        customData,
-      }
-    }),
+  //     return {
+  //       title: item.frontmatter.title,
+  //       description: item.frontmatter.description,
+  //       link: item.url,
+  //       pubDate: item.frontmatter.date,
+  //       customData,
+  //     }
+  //   }),
     
-    dest: "/rss.xml",
+  //   dest: "/rss.xml",
 
-  })
+  //})
 
     return paginate(sortedPosts, { pageSize: 25 })
  }

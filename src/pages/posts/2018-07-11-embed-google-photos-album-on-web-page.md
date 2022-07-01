@@ -1,11 +1,12 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: How to Embed a Google Photos Album on a Web Page
 description: "Google Photos is great for *storing* your photos. It's even becoming pretty good at *sharing* select photos with select people. But still, the problem for many of us from the Picasa Web Album days is *displaying* our albums publicly."
 date: '2018-07-11'
+pubDate: '2018-07-11'
 thumb_img_path: images/gphotoalbumsPW.png
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Google Photos"]
 ---
 Google Photos is great for *storing* your photos. It's even becoming pretty good at *sharing* select photos with select people. But still, the problem for many of us from the Picasa Web Album days is *displaying* our albums publicly.

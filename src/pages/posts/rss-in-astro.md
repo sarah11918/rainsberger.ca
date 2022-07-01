@@ -1,10 +1,11 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Adding an RSS feed to my Astro blog
 author: Sarah
 date: '2022-01-07'
+pubDate: '2022-01-07'
 description: One of the reasons I had delayed setting up an RSS feed for this blog is that Astro is still technically in beta, and many aspects of coding the site are changing right before my eyes! With everything else I was learning, I didn't want to have to re-learn this, too. But, in the spirit of accessible, self-hosted content, I started the new year by sitting down and cranking it out. Here's how I did it...
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLXDzxXRdtknmo5bQNcTnxxZg8Q-Ux4mHbTKHTvWtziRsmVhaK5VmigyjBVpuY_IBCVggs4ndbJhFvctS5xasCT8KcQzd6eKaY3vN50KMC6A_MYqa9exzg5y-e-pg2v6D0cTBcOKCUG9wZd0m-Cqn5Tc8Q=w250-no?"
-layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["rss", "astro", "blogging"]
 ---
 > You can create an RSS feed from any Astro page that uses a `getStaticPaths()` function for routing. Only dynamic routes can use `getStaticPaths()` [currently].

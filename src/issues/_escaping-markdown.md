@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Escaping Markdown Characters in Astro
+title: "Escaping Markdown Characters in Astro"
 date: '2021-08-12'
-author: Sarah Rainsberger
-description: Exploring the ins and outs of special Markdown characters in Astro
-slug: escaping-markdown
+author: "Sarah Rainsberger"
+description: "Exploring the ins and outs of special Markdown characters in Astro"
+slug: "escaping-markdown"
 tags: ["astro", "markdown"]
 ---
 

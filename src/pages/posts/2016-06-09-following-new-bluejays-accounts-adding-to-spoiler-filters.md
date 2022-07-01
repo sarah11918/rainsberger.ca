@@ -1,7 +1,9 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: My spoiler-proof systems for Blue Jays Twitter
 subtitle: ''
 date: '2016-06-09'
+pubDate: '2016-06-09'
 excerpt: >-
   I have written before about my most awesome, practically spoiler-proof system
   on MacOS for reading Blue Jays tweets in "alternate time" as we watch
@@ -12,7 +14,6 @@ excerpt: >-
 hide_header: false
 template: post
 thumb_img_path: images/filtertab.jpg
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Twitter"]
 ---
 I have written before about my most awesome, practically spoiler-proof system on MacOS for reading Blue Jays tweets in "alternate time" as we watch PVR-delay or archived games (and a comparable Android version). But, it's not simply "set it and forget it!" When the Blue Jays sign a new player or I find a new Jays fan to follow on Twitter, new accounts need to be added to this system.

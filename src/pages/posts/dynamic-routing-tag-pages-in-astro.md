@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Creating individual tag pages in Astro via dynamic routes
 author: Sarah
 date: '2022-01-12'
+pubDate: '2022-01-12'
 description: "Now that I'm on a roll with dynamic routing via getStaticPaths() in Astro, I'm checking the next item off my Astro blog wish list: pages to display blog posts by tag."
-layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["blogging", "astro"]
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLWRqFaydBbVVEox1SbMrZy4TdNiWp9OiftlGPTmpGTo9BT0dBsq4_sHB7EC8KIPUKLY-2KSTYPw72CQyIQEXLzY9z_cZVKcKJJEbjIVQRJSqgGR6NkfxEn08XBe8hoNLFNJrOqEASvlOOQBbDtuYdizgA=w250-no?"
 ---

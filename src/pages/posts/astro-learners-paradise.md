@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Astro is a learner's paradise!
 author: Sarah
 date: '2021-09-30'
+pubDate: '2021-09-30'
 description: One of Astro's selling points has been that you can bring your own mix-and-match components... but I didn't really get the power of that as a *learner* until just now, listening to Fred K. Schott interviewed on devtools.fm
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: astro-learners-paradise
 tags: ["astro", "blogging"]
 ---

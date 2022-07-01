@@ -1,7 +1,9 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: How to make a public album gallery page in Google Photos - like Picasa had
 subtitle: ''
 date: '2016-03-29'
+pubDate: '2016-03-29'
 excerpt: >-
   Today I attempted to create a public photo album gallery page in Google
   Photos, something PicasaWeb Albums generates automatically for its users but
@@ -9,7 +11,6 @@ excerpt: >-
 hide_header: false
 template: post
 thumb_img_path: images/gcollections.jpg
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["Google Photos"]
 ---
 Can I start yet another post with *"One issue (among many!) that people are having with the transition from Picasa Web Albums to Google Photos is ..."*? Well, here goes nothin'!

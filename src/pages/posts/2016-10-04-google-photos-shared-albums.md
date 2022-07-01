@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: Lesson Learned - Never create a shared album in Google Photos!
 excerpt: >-
   "Shared Albums" in Google Photos are great for collaborating. I finally got
@@ -7,10 +8,10 @@ excerpt: >-
   people contribute to the same album, you should probably just create a "new
   shared album" right off the bat, right? WRONG!
 date: '2016-10-04'
+pubDate: '2016-10-04'
 thumb_img_path: images/sharedalbum.png
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 slug: 2016-10-04-google-photos-shared-albums
 tags: ["Google Photos"]
 ---

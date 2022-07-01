@@ -1,14 +1,15 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: IF Timer v1.0
 excerpt: >-
   A quick post to announce a very exciting thing:  I have an app, and now you
   can have it, too!  Get IF Timer now, or read more about it first. . .
 date: '2017-12-15'
+pubDate: '2017-12-15'
 thumb_img_path: images/fastingcrop.png
 hide_header: false
 template: post
 content_img_path: images/chromebookleaf.jpg
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["app"]
 ---
 A quick post to announce a very exciting thing:

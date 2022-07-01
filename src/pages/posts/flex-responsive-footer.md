@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: A footer that sits at the bottom of "short" pages
 author: Sarah
 date: '2021-07-31'
+pubDate: '2021-07-31'
 description: Using flex-grow to create a "spacer" div to solve the problem of a footer displaying halfway down a page when you don't have enough content to fill the entire height of the screen.
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: flex-responsive-footer
 tags: ["astro", "css"]
 ---

@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Thinking in Astro, Coming from React
 author: Sarah
 date: '2021-11-12'
+pubDate: '2021-11-12'
 description: Astro sites allow you to *use* React, but they *aren't* React, themselves. Understanding the differences between React and Astro can help you get started more quickly, so here are some thoughts on how to think like an Astro-naut!
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: thinking-in-astro-from-react
 tags: ["react", "astro"]
 ---

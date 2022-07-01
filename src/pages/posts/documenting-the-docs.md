@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "Doc'ing the Docs!"
 author: Sarah
 date: "2022-04-06"
+pubDate: "2022-04-06"
 description: "A brief history of what's been going on in the Astro docs."
-layout: ../../layouts/MarkdownPostLayout.astro
 tags: ["astro", "docs", "open source"]
 slug: documenting-the-docs
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLXY5iHIWXt-aKeqnZLeOcStRao3KIHsGKDZ3opWGHnsqSgyfwGsBkTCaE0uXtgSMRwT_lFJ0gZK-Sv_NE3oZDcFLpFbz24FBIyBsPhPHqgi4qpcIuLIvvYGRXgSHyFcIkhCCtkblacC4nvQ7Cm5JeKyWg=w250-no?"

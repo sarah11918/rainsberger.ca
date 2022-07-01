@@ -1,9 +1,10 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Contribute to Open Source Docs via "Edit this page" on GitHub
 author: Sarah
 date: '2022-02-10'
+pubDate: '2022-02-10'
 description: Have you ever been reading documentation for an open source project and found a typo, or an out-of-date code example? If there's an "edit this page on GitHub" link, then you're only a few clicks away from contributing to Open Source and helping out a project!
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: contribute-open-source-docs-edit-page-on-github
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLVlEOs2B3CDL71pIcX19WE_CJe8g0AY9Yvdo_xAtngnbNEodJwfa02WL2r5PQbmybCOD3wtqIDxXPvi5eNxb-67gEkqAPl56OzAbl5fYHbSk7kPFnOJYmOEEw4mOTvNhhCYQYSkL3B6oC0gfYg59sCN1w=w250-no?"
 alt: "Side bar of a documentation site with a menu item called Edit This Page"

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/OldMarkdownPostLayout.astro
 title: Jekyll Blog Post Entirely via Android
 excerpt: >-
   While I was  mostly ready to switch from Mac to ChromeOS/Android, the last
@@ -9,10 +10,10 @@ excerpt: >-
 
   If you can read this, then I am success! And here's what I did...
 date: '2017-03-01'
+pubDate: '2017-03-01'
 thumb_img_path:
 content_img_path: images/chromebookleaf.jpg
 template: post
-layout: ../../layouts/OldMarkdownPostLayout.astro
 tags: ["blogging"]
 ---
 The Samsung Chromebook Plus is already out in the wild and available for purchase. With the calendar flipping to March today, I can now say that the PRO model will be available _next month_!
