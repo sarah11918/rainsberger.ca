@@ -36,7 +36,11 @@ main {
   width: 80%;
   margin: 0 auto;
   max-width: 80ch;
-  line-height: 1.4em;
+}
+
+p {
+  line-height: 1.6em;
+  font-size: 1.1em;
 }
 
 footer {
@@ -86,7 +90,7 @@ code:not([class*="language"]){
 }
 
 h2 {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 h2 > p {
   margin-bottom: 0.25em;
