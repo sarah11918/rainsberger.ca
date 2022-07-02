@@ -36,6 +36,7 @@ main {
   width: 80%;
   margin: 0 auto;
   max-width: 80ch;
+  line-height: 1.4em;
 }
 
 footer {

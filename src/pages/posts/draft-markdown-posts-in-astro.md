@@ -1,12 +1,12 @@
 ---
-# setup: |
-#     import ReactCounter from '../../components/ReactCounter.jsx'
-
+setup: |
+    import ReactCounter from '../../components/ReactCounter.jsx'
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Astro now has Draft Posts in Markdown!
 author: Sarah
 date: '2022-01-26'
+pubDate: '2022-01-26'
 description: "An exciting contribution by a community member has us all drafting new posts..."
-layout: ../../layouts/MarkdownPostLayout.astro
 slug: draft-markdown-posts-in-astro
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLW5_x_VX1Yc1Pyo5GwU-ptYInDKww8s1e9OxFZNGoPrqmZSu0afEyM5uLzZgnzE8ahMZ3KBbPPZE4CxZxFAz54jcbG3zdFpcSt_hrBO1elOH22xgLg1ASZfgVl9SYGB_koYDxhm8kISu6VAyJkLzvLXFQ=w250-no?"
 tags: ["astro", "markdown", "blogging"]
@@ -60,4 +60,4 @@ tags: ["astro", "markdown", "blogging"]
 
 Just so we have something else exciting in front matter to show off.  ;)
 
-ReactCounter client:load
+<ReactCounter client:load />
