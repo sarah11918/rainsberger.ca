@@ -363,9 +363,14 @@ code {
   background-color: #19232a;
   color: rgb(222, 218, 218);
 }
-.light {
-  background-color: green;
- }
+
+.dark a { 
+  color: rgb(144, 147, 216);
+}
+
+.dark a:visited { 
+  color: rgb(144, 147, 216);
+}
  .hidden {
   display:none;
  }
