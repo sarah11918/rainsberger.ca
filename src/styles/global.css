@@ -11,6 +11,7 @@ html {
   margin: 0;
 }
 
+
 body {
   width: 100%;
   margin: 0;
@@ -357,3 +358,22 @@ code {
   font-size: 1.25em;
   font-weight: normal;
 }
+
+.dark {
+  background-color: #19232a;
+  color: rgb(222, 218, 218);
+}
+.light {
+  background-color: green;
+ }
+ .hidden {
+  display:none;
+ }
+
+ .full {
+  border: red 2px solid;
+ }
+
+ .small {
+  border: yellow 2px solid;
+ }
