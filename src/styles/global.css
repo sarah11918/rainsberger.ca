@@ -371,14 +371,15 @@ code {
 .dark a:visited { 
   color: rgb(144, 147, 216);
 }
- .hidden {
-  display:none;
- }
 
- .full {
-  border: red 2px solid;
- }
+.nav-link a:visited { 
+  color: #addbff;
+}
 
- .small {
-  border: yellow 2px solid;
- }
+.footer-link a:visited { 
+  color: #addbff;
+}
+
+.footer-link a { 
+  color: #addbff;
+}

@@ -136,6 +136,14 @@ header {
     overflow: visible;
   }
   
+  a.footer-link:visited { 
+    color: #addbff;
+  }
+  
+  a.footer-link {
+    color: #addbff;
+  }
+  
   @media (min-width: 920px) {
     .open,
     .exit {
@@ -173,6 +181,12 @@ header {
     .nav-link .active a {
       color: white;
     }
+
+    .nav-link a:visited { 
+      color: #addbff;
+    }
+
+
    
     .nav-selected {
       font-style: italic;
