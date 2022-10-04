@@ -62,16 +62,10 @@ const imageAlt = alt ?? site.image.alt;
           
             if (theme === 'light') {
               document.documentElement.classList.remove('dark');
-              document.getElementById(light-image).classList.add('small')
-              document.getElementById(dark-image).classList.remove('full')
             } else {
               document.documentElement.classList.add('dark');
-              document.getElementById(light-image).classList.remove('small')
-              document.getElementById(dark-image).classList.add('full')
             }
             window.localStorage.setItem('theme', theme);
-          </script>
-          <script is:inline>
             const handleToggleClick = () => {
               const element = document.documentElement;
               element.classList.toggle("dark");
@@ -90,7 +84,7 @@ const imageAlt = alt ?? site.image.alt;
                         <div class="site-description">Creates and solves problems</div>
                           
                           <span onclick="handleToggleClick()" style="display:flex;">
-                            <img style="width:75px;border-radius:15px;" src="/birdstheme.png">
+                            <img style="width:75px;border-radius:20px;" src="/combinedbirdtoggle.png">
                           
                           </span>
                     </div>
