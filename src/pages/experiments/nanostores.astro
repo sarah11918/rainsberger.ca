@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BirdNanoForm from '../../components/experiments/BirdNanoForm';
+import BirdNanoList from '../../components/experiments/BirdNanoList';
+import BirdNanoCounter from '../../components/experiments/BirdNanoCounter.vue';
+
+---
+<BaseLayout title="Shared State">
+  <main>
+    <h2>Birds Seen Today</h2>
+    <BirdNanoForm client:only="react" />
+    <BirdNanoList client:only="react" />
+    <BirdNanoCounter client:only="vue"/>
+
+  </main>
+</BaseLayout>
