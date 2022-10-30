@@ -23,13 +23,13 @@ export async function getStaticPaths({ }) {
 const { posts } = Astro.props;
 const { tag } = Astro.params;
 
-let title = tag; 
+let title = `Tagged with ${tag}`; 
 ---
 <BaseLayout title={title}>
     <main>
-        <p style="font-size: 1.5em">Posts tagged with <em><span style="font-weight: bold; color:#3d5262;">{title}</span></em></p>
+        <p style="font-size: 1.5em">{title}</p>
         
-        <div style="display:grid; grid-template-columns:12ch auto">
+        <div style="display:grid; grid-template-columns:15ch auto">
         {posts.map(post => 
           <p><span style="font-family: monospace;padding-right:2em;">{post.frontmatter.date}</span></p>
           <p><a href={post.url}>{post.frontmatter.title}</a></p>
