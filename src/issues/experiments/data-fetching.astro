@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { Markdown } from 'astro/components'
+import Markdown from 'astro/components'
 const allPokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=5`);
 const allPokemonResult = await allPokemonResponse.json();
 const allPokemon = allPokemonResult.results;

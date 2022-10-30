@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ApolloApp from '../../components/experiments/ApolloApp.jsx';
+import Markdown from '@astrojs/markdown-component';
+import { Code } from 'astro/components';
+---
+<BaseLayout title="Apollo GraphQL client">
+  <main>
+    <ApolloApp client:only="react" />
+    <hr />
+    <Markdown>
+      Here is the code for this page:
+        ```astro
+          ---
+          import BaseLayout from '../../layouts/BaseLayout.astro';
+          import ApolloApp from '../../components/experiments/ApolloApp.jsx';
+          ---
+          <BaseLayout title="Apollo GraphQL client">
+            <main>
+            <ApolloApp client:only="react" />
+            </main>
+          </BaseLayout>
+        ```
+
+      And, here is the code for my parent-level Apollo GraphQL app, wrapped in an Apollo Client Provider:
+        
+        ```jsx
+        //src/components/experiments/ApolloApp.jsx
+        import React from "react";
+        import {ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
+        import Weather from "./Weather.jsx";
+
+        function ApolloApp() {
+
+          const client = new ApolloClient ({
+              cache: new InMemoryCache(),
+              uri: "https://graphql-weather-api.herokuapp.com",
+          })
+
+          return (
+              <ApolloProvider client={client}>
+              <h1> Weather App </h1>
+              <Weather />
+              </ApolloProvider>
+          );
+        }
+
+        export default ApolloApp;
+        ```
+    </Markdown>
+  </main>
+</BaseLayout>

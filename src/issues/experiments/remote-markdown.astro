@@ -1,5 +1,5 @@
 ---
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 const content = await fetch("https://raw.githubusercontent.com/sarah11918/astro-elsa/main/README.md").then((res) => res.text());
 
@@ -53,7 +53,7 @@ const localMarkdown = `# inserted as content
     ```astro
     //src/pages/experiments/remote-markdown.astro
     ---
-    import { Markdown } from 'astro/components';
+    import Markdown from '@astrojs/markdown-component';
     import BaseLayout from '../../layouts/BaseLayout.astro';
     const content = await fetch("https://raw.githubusercontent.com/sarah11918/astro-elsa/main/README.md").then((res) => res.text());
 

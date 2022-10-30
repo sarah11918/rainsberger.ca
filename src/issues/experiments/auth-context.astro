@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AuthApp from '../../components/experiments/AuthApp.jsx';
+import Markdown from '@astrojs/markdown-component';
+---
+<BaseLayout title="Auth State Context">
+  <main>
+
+   <Markdown>
+      Here is a React component that can hold state and share context (within the component, in a "React Island.")
+   </Markdown>
+   <hr />
+   <AuthApp client:load />
+   <hr />
+   <Markdown>
+      Here is the code for this page:
+
+         ```astro
+         //src/pages/auth-context.astro
+
+         ---
+         import BaseLayout from '../../layouts/BaseLayout';
+         import AuthApp from '../../components/AuthApp.jsx';
+         js
+markdown-         ---
+
+         <BaseLayout title="Auth State Context">
+               <main>
+
+                  <Markdown>
+                     Here is a React component that can hold state (within the component, in a "React Island.")
+                  </Markdown>
+                  
+                  <hr />
+                  <AuthApp client:load />
+                  <hr />
+                  
+                  <Markdown>
+                     Here is the code for this page:
+                  </Markdown>
+
+               </main>
+         </BaseLayout >
+         ```
+
+      And this is the AuthApp.jsx component that's being rendered.
+
+         ```js
+         //src/components/AuthApp.jsx
+         import React, { useState } from 'react';
+         import LogInButton from '../components/LoginButton.jsx';
+         import LogOutButton from '../components/LogoutButton.jsx';
+         import AuthContext from '../components/AuthContext.jsx';
+
+         const AuthApp = () => {
+            const [auth, setAuth] = useState(false);
+            
+            const login = () => {
+               setAuth(true);
+            };
+            
+            const logout = () => {
+               setAuth(false);
+            };
+            
+            return (
+               <>
+                  <p>Your logged in status: {auth} </p>
+                  <AuthContext.Provider value={{ auth: auth, login: login, logout: logout }}>
+                     <p>{auth ? 'Yay! You are logged in.' : 'You need to click to log in.'}</p>
+                     <LogInButton />
+                     <LogOutButton />
+                  </AuthContext.Provider>
+               </>
+            );
+         };
+         export default AuthApp;
+         ```
+
+      With this context... 
+
+         ```js
+         // src/components/AuthContext.jsx
+
+         import React, { createContext } from 'react';
+
+         const AuthContext = createContext({ 
+               auth: null,
+               login: () => {}, //For the sake of playing with context, I'm holding these functions in context, too. Normally, I wouldn't bother.
+               logout: () => {},
+         });
+
+         export default AuthContext;
+         ```
+
+      and some external button components that also accept their functions through context.
+
+         ```js
+         //Login Button at src/components/LoginButton.jsx
+         import React, { useContext } from 'react';
+         import AuthContext from '../components/AuthContext.jsx';
+
+         const LoginButton = () => {
+               const auth = useContext(AuthContext);
+               return (
+                  <> //NB: gratuitous fragment, really only necessary if returning more than one element
+                     <button onClick={auth.login}>Login</button>
+                  </>
+               );
+         };
+
+         export default LoginButton;
+         ```
+
+         ```js
+         //Logout Button at src/components/LogoutButton.jsx
+         import React, { useContext } from 'react';
+         import AuthContext from '../components/AuthContext.jsx';
+
+         const LogoutButton = () => {
+               const auth = useContext(AuthContext);
+               return (
+                  <>
+                     <button onClick={auth.logout}>Click To Logout</button>
+                  </>
+               );
+         };
+         export default LogoutButton;
+         ````
+
+    </Markdown>
+  </main>
+</BaseLayout>

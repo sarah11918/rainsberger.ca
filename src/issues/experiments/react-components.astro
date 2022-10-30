@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import Button from '../../components/experiments/Button.jsx';
 import Counter from '../../components/experiments/Counter.jsx';
 import Characters from '../../components/experiments/Characters.jsx';
-import { Markdown } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 const characters = await fetch('https://finalspaceapi.com/api/v0/character?limit=5')
  .then((res) => res.json());
 ---
@@ -27,7 +27,7 @@ const characters = await fetch('https://finalspaceapi.com/api/v0/character?limit
       import Button from '../../components/Button.jsx';
       import Counter from '../../components/Counter.jsx';
       import Characters from '../../components/Characters.jsx';
-      import { Markdown } from 'astro/components';
+      import Markdown from '@astrojs/markdown-component';
 
       const characters = await fetch('https://finalspaceapi.com/api/v0/character?limit=5')
       .then((res) => res.json());

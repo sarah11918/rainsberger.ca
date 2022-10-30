@@ -12,7 +12,7 @@ tags: ["no local dev environment"]
 
 For a straightforward API call with my API key included right in the URL, I had no problem fetching data using an environment variable (stored both in Gitpod and in Netlify) in the JavaScript code block of my Astro page. (You can see how it's used in [Part 1](/posts/no-local-environment-variables-part-1).)
 
-But, using the eBird API requires a call with Headers which I am making within a React component. You can see an example of [how I fetch from eBird in this experiment](/experiments/data-fetching-headers/), using my API key's value as a string.
+But, using the eBird API requires a call with Headers which I am making within a React component. 
 
 Problems arose while attempting to replace this string with an environment variable. While this variable appeared to be available upon initial render, almost immediately, the `process` object was not available to my code, causing my component to "disappear" from my Astro page and a console message that process was not defined. The only version of my code that successfully ran used my API key directly as a string in my Header, which obviously exposed it in my source code. Here's how the friendly Gitpod community contributed to my site and at least solved the problem of the exposed API key... (embedded as a CodePen to avoid some Markdown woes.)
 

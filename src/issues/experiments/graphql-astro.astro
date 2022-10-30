@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { Code, Markdown } from 'astro/components';
+import { Code } from 'astro/components';
+import Markdown from '@astrojs/markdown-component';
 
 const myCity = "Milan"
 const responseb = await fetch("https://graphql-weather-api.herokuapp.com", 

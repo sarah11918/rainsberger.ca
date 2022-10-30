@@ -10,7 +10,7 @@ tags: ["astro", "blogging"]
 ---
 # Astro is a learner's paradise!
 
-My most recent ["experiment"](/experiments/) was to render two identical components, one counter/button written in React (which I know) and one written in Svelte (which I do not know) on the same page. This was originally going to be a post comparing the two, and that post will happen. 
+My most recent experiment was to render two identical components, one counter/button written in React (which I know) and one written in Svelte (which I do not know) on the same page. This was originally going to be a post comparing the two, and that post will happen. 
 
 But, while doing my end-of-the-month photo organizing, I finally got around to listening to [Fred](https://twitter.com/FredKSchott) being [interviewed on devtools.fm about Astro](https://devtools.fm/episode/14)... and THAT's when it really clicked for me that **Astro is the reason I can so easily play around with these various front-end tools, languages and frameworks as a learner**.
 
@@ -29,7 +29,7 @@ Here are a couple of other quotations from the interview hosts that I found note
 >"Just the idea that this can be expanded in the future, so if React falls out of vogue and there's some new, better thing that comes along, we can jump on that ship and incrementally migrate with little to no cost."
 
 
-So, eventually I'll get around to writing the post to accompany the process of creating my [React and Svelte counter buttons in the same page experiment](/experiments/react-vs-svelte-buttons/), but for now, I thought it was noteworthy to discuss *why* that is such a big deal in the first place:
+So, eventually I'll get around to writing the post to accompany the process of creating my React and Svelte counter buttons in the same page experiment, but for now, I thought it was noteworthy to discuss *why* that is such a big deal in the first place:
 
 I didn't have to go to CodeSandbox and look for a Svelte template, or find something to fork on GitHub.
 
