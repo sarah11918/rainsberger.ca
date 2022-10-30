@@ -11,7 +11,7 @@ const postURL = `https://rainsberger.ca/posts/${content.slug}`
     <p><em>{content.description}</em></p>
     <h1>{content.title}</h1>
     <div style="display:flex;">
-    {content.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><a href={`/tags/${tag}`}>{tag}</a></div>)}
+    {content.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><p style="border-radius:10px; padding-top:0.25rem; padding-bottom:0.25rem; padding-left:0.35rem; padding-right:0.35rem; border: 1px solid rgb(144, 147, 216)"><a href={`/tags/${tag}`}>{tag}</a></p></div>)}
     </div>
     
     <p>Written by: {content.author} on {postDate}</p>
@@ -20,8 +20,8 @@ const postURL = `https://rainsberger.ca/posts/${content.slug}`
       <slot />
     </article>
     <div style="display:flex;">
-    {content.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><a href={`/tags/${tag}`}>{tag}</a></div>)}
-    </div>
+      {content.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><p style=" border-radius:10px; padding-top:0.25rem; padding-bottom:0.25rem; padding-left:0.35rem; padding-right:0.35rem; border: 1px solid rgb(144, 147, 216)"><a href={`/tags/${tag}`}>{tag}</a></p></div>)}
+      </div>
     <div style="display: flex; justify-content:space-between;">
       <p><a href="/posts">See more posts ...</a></p>
 
