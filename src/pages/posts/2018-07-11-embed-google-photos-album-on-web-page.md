@@ -21,7 +21,7 @@ If Google won't give me a proper public gallery site, then I'd like to figure ou
 
 ## The tool:
 
-I stumbled across a tool at [publicgallery.org](https://www.publicalbum.org/blog/embedding-google-photos-albums) that generates a slideshow of a Google Photos album that has been "shared." (I am careful to [differentiate that from a "Google Photos shared album."](/2016/10/04/google-photos-shared-albums/) Because Google.)
+I stumbled across a tool at [publicgallery.org](https://www.publicalbum.org/blog/embedding-google-photos-albums) that generates a slideshow of a Google Photos album that has been "shared." (I am careful to [differentiate that from a "Google Photos shared album."](/posts/2016-10-04-google-photos-shared-albums/) Because Google.)
 
 Entering the URL of a Google Photos album will give you some code that you can copy into html to produce a nice, if basic, slideshow preview of all the photos in an album. The slideshow can be played, or navigated through forwards and backwards, photo-by-photo. I added the few lines of code to the html of my Photography page where I wanted the slideshow to appear, and it worked.
 
