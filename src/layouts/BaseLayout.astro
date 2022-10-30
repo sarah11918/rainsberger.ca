@@ -16,7 +16,7 @@ const site={
 //const currentPage = Astro.request.url.pathname;
 
 const currentPage = new URL(Astro.request.url).pathname
-const url = Astro.canonicalURL.href
+const url = Astro.url.href
 const imgSrc = hero ?? site.image.src;
 const imageAlt = alt ?? site.image.alt;
 ---
