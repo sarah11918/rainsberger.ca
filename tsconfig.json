@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "types": ["@astrojs/image/client"]
   }
 }

@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
+    "@astrojs/image": "^0.11.0",
     "@astrojs/markdown-component": "^1.0.1",
     "@astrojs/rss": "^0.2.0",
     "@astrojs/vue": "^1.2.1",
@@ -28,6 +29,7 @@
     "@nanostores/vue": "^0.6.0",
     "graphql": "^16.2.0",
     "nanostores": "^0.7.0",
+    "sharp": "^0.31.1",
     "vue": "^3.2.41"
   }
 }
