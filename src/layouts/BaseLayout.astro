@@ -2,6 +2,7 @@
 import * as Icon from '@astropub/icons';
 import '../styles/global.css';
 import '../styles/nav.css';
+import { Image } from '@astrojs/image/components';
 const {title, description, postURL, hero, canonicalURL, alt} = Astro.props;
 const formattedTitle = `${title} 👩‍💻 Sarah Rainsberger`
 const site={
@@ -84,7 +85,7 @@ const imageAlt = alt ?? site.image.alt;
                         <div class="site-description">Creates and solves problems</div>
                           
                           <span onclick="handleToggleClick()" style="display:flex;">
-                            <img style="width:75px;border-radius:20px;" src="/combinedbirdtoggle.png" alt="A black crow and a white/yellow chickadee sitting on a branch together, with a large moon behind them.">
+                            <Image width="75" height="75" style="border-radius:20px;" src="/combinedbirdtoggle.png" alt="A black crow and a white/yellow chickadee sitting on a branch together, with a large moon behind them." />
                           
                           </span>
                     </div>
