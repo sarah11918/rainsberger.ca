@@ -9,6 +9,7 @@ pubDate: '2022-01-26'
 description: "An exciting contribution by a community member has us all drafting new posts..."
 slug: draft-markdown-posts-in-astro
 hero: "https://lh3.googleusercontent.com/pw/AM-JKLW5_x_VX1Yc1Pyo5GwU-ptYInDKww8s1e9OxFZNGoPrqmZSu0afEyM5uLzZgnzE8ahMZ3KBbPPZE4CxZxFAz54jcbG3zdFpcSt_hrBO1elOH22xgLg1ASZfgVl9SYGB_koYDxhm8kISu6VAyJkLzvLXFQ=w250-no?"
+alt: A merged PR request titled Implement support for draft pages
 tags: ["astro", "markdown", "blogging"]
 ---
 Thanks to [Pranav](https://github.com/retronav), Astro [v0.22.15](https://github.com/withastro/astro/blob/main/packages/astro/CHANGELOG.md#02215) now supports adding a `draft: true` field to the front matter of a Markdown blog post to prevent the page being build during `astro build`! 🥳
