@@ -21,7 +21,6 @@ let sortedPosts= allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.p
             {post.frontmatter.tags.map((item) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><p style="border-radius:10px; padding-top:0.25rem; padding-bottom:0.25rem; padding-left:0.35rem; padding-right:0.35rem; border: 1px solid rgb(144, 147, 216)"><a href={`/tags/${item}`}>{item}</a></p></div>)}
           </div>
           <p>{new Date(post.frontmatter.date).toISOString().slice(0, 10)}</p>
-          <a style="font-size: 0.8em;" href={post.url}>Read more</a>
           <hr>
         </article>
       )})}
