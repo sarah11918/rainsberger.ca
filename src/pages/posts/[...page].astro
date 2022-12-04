@@ -6,7 +6,8 @@ let description = 'All blog posts.'
 
 export async function getStaticPaths({ paginate, rss }) {
   const allPosts = await Astro.glob('./*.md');
-  const sortedPosts = allPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+  const publicPosts = allPosts.filter((post) => !post.frontmatter.draft);
+  const sortedPosts= publicPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 
   // rss({
   //   title: "Sarah Rainsberger | Blog",
@@ -31,13 +32,14 @@ export async function getStaticPaths({ paginate, rss }) {
   //})
 
     return paginate(sortedPosts, { pageSize: 25 })
- }
+}
 
 
-let myPosts = await Astro.glob('./*.md');
-const sortedPosts = myPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+const allPosts = await Astro.glob('./*.md');
+const publicPosts = allPosts.filter((post) => !post.frontmatter.draft);
+const sortedPosts= publicPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 
-
+const {page} = Astro.props
 ---
 <BaseLayout title="All Posts">
   <main>
