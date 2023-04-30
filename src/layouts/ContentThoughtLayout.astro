@@ -7,7 +7,7 @@ const { frontmatter } = Astro.props;
   <main>
     <p><em>{frontmatter.description}</em></p>
     <h1>{frontmatter.title}</h1>
-    <p>Written by: {frontmatter.author} on {frontmatter.pubDate}</p>
+    <p>{frontmatter.pubDate}</p>
   
     <article>
       <slot />
