@@ -17,7 +17,7 @@ const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.pa
           
           <a href={`/thoughts/${post.slug}`}><h3>{post.data.title}</h3></a>
           <p>{post.data.description}</p>
-          <p>{post.data.date}</p>
+          <p>{post.data.pubDate}</p>
 
           <hr>
       
