@@ -1,7 +1,9 @@
 {
+  // "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "moduleResolution": "node",
     "jsx": "preserve",
-    "types": ["@astrojs/image/client"]
+    "types": ["@astrojs/image/client"],
+    "strictNullChecks": true
   }
 }
