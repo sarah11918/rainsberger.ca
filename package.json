@@ -9,11 +9,11 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/react": "^2.0.2",
-    "@astrojs/svelte": "^2.0.2",
+    "@astrojs/react": "^2.1.1",
+    "@astrojs/svelte": "^2.1.0",
     "@astropub/icons": "^0.1.1",
     "accessible-astro-components": "^1.4.5",
-    "astro": "^2.0.13",
+    "astro": "^2.3.2",
     "astro-xelement": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.0.0",
@@ -21,10 +21,10 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
-    "@astrojs/image": "^0.15.0",
+    "@astrojs/image": "^0.16.6",
     "@astrojs/markdown-component": "^1.0.2",
     "@astrojs/rss": "^2.1.1",
-    "@astrojs/vue": "^2.0.1",
+    "@astrojs/vue": "^2.1.1",
     "@nanostores/react": "^0.4.0",
     "@nanostores/vue": "^0.6.0",
     "graphql": "^16.2.0",
