@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const allPosts = await getCollection("thoughts");
-const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
+const sortedPosts = allPosts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 ---
 
 <BaseLayout title="Thoughts" description="Thoughts">

@@ -31,8 +31,8 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - D
       <h4><a href="/posts">See full post archive ...</a></h4>
     </div>
 
-    <div class="thoughts">
-      <h2>Thoughts</h2>
+    <div class="thoughts" style="margin-top: 3em;">
+      <h2>Recent Thoughts</h2>
       <div>
         {
           sortedThoughts.slice(0, 5).map((post) => {
