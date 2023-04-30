@@ -6,7 +6,6 @@ const thoughtsCollection = defineCollection({
       pubDate: z.date(),
       description: z.string(),
       author: z.string(),
-      slug: z.string(),
     })
 });
 // Export a single `collections` object to register your collection(s)

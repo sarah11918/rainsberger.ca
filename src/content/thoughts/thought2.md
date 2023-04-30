@@ -1,7 +1,7 @@
 ---
 title: "To do: content collection-specific RSS feed"
 author: Sarah
-pubDate: '2023-04-30'
+pubDate: 2023-04-30
 description: Since these thoughts won't show up in my RSS feeds, next on the stack will be figuring out how, if at all, I want to broadast these.
 slug: publish-somewhere
 ---

@@ -107,18 +107,18 @@ declare module 'astro:content' {
   slug: "first-thought",
   body: string,
   collection: "thoughts",
-  data: any
+  data: InferEntrySchema<"thoughts">
 } & { render(): Render[".md"] },
 "thought2.md": {
   id: "thought2.md",
   slug: "publish-somewhere",
   body: string,
   collection: "thoughts",
-  data: any
+  data: InferEntrySchema<"thoughts">
 } & { render(): Render[".md"] },
 },
 
 	};
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
