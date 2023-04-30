@@ -1,6 +1,6 @@
 ---
 title: My first thought!
-pubDate: 2023-04-29
+pubDate: '2023-04-29'
 author: Sarah
 description: This is a "thought" -- a different content type, using Astro's content collections.
 slug: first-thought

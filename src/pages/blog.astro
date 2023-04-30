@@ -40,7 +40,7 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - D
               <article>
               <a href={`/thoughts/${post.slug}`}><h3>{post.data.title}</h3></a>
               <p>{post.data.description}</p>
-              <p>{post.data.pubDate}</p>
+              <p>{new Date(post.data.pubDate).toISOString().slice(0, 10)}</p>
               <hr>
             </article>
             )})
