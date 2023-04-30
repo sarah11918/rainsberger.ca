@@ -6,7 +6,7 @@ const publicPosts = allPosts.filter((post) => !post.frontmatter.draft);
 const sortedPosts= publicPosts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
 
 const allThoughts = await getCollection('thoughts')
-const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
+const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate));
 ---
 </style>
 <BaseLayout title="My Blog">
@@ -40,7 +40,7 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.date) - Date
               <article>
               <a href={`/thoughts/${post.slug}`}><h3>{post.data.title}</h3></a>
               <p>{post.data.description}</p>
-              <p>{post.data.date}</p>
+              <p>{post.data.pubDate}</p>
               <hr>
             </article>
             )})
