@@ -104,14 +104,14 @@ declare module 'astro:content' {
 		"thoughts": {
 "thought1.md": {
   id: "thought1.md",
-  slug: "thought1",
+  slug: "first-thought",
   body: string,
   collection: "thoughts",
   data: any
 } & { render(): Render[".md"] },
 "thought2.md": {
   id: "thought2.md",
-  slug: "thought2",
+  slug: "publish-somewhere",
   body: string,
   collection: "thoughts",
   data: any

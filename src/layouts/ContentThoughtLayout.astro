@@ -3,20 +3,15 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 const { frontmatter } = Astro.props;
 
 ---
-<BaseLayout >
+<BaseLayout title={frontmatter.title}>
   <main>
     <p><em>{frontmatter.description}</em></p>
     <h1>{frontmatter.title}</h1>
     <p>Written by: {frontmatter.author} on {frontmatter.pubDate}</p>
-    <div style="display:flex;">
-      {frontmatter.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><p style="border-radius:10px; padding-top:0.25rem; padding-bottom:0.25rem; padding-left:0.35rem; padding-right:0.35rem; border: 1px solid rgb(144, 147, 216)"><a href={`/tags/${tag}`}>{tag}</a></p></div>)}
-      </div>
+  
     <article>
       <slot />
     </article>
-    <div style="display:flex;">
-      {frontmatter.tags.map((tag) => <div style="padding-right: 1.5em; font-weight: bold; color:#3d5262;"><p style=" border-radius:10px; padding-top:0.25rem; padding-bottom:0.25rem; padding-left:0.35rem; padding-right:0.35rem; border: 1px solid rgb(144, 147, 216)"><a href={`/tags/${tag}`}>{tag}</a></p></div>)}
-      </div>
     <div style="display: flex; justify-content:space-between;">
       <p><a href="/posts">See more posts ...</a></p>
       <p><a href="/thoughts">See more thoughts ...</a></p>
