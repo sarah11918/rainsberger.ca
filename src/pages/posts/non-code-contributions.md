@@ -6,7 +6,7 @@ date: '2023-05-20'
 pubDate: '2023-05-20'
 description: One of the most rewarding parts about leading Astro Docs is welcoming non-code contributors to open source! We still have work to do, but the open source community is slowly starting to realize (and capitalize on!) the value of writers, translators, designers, testers, content creators, speakers, community support members.
 slug: contribute-open-source-docs-edit-page-on-github
-hero: "/hacktoberfest-low-code.png"
+hero: "https://lh3.googleusercontent.com/pw/AJFCJaWrhaKvO_y4vW3gg9CIsz2ILFsfAkOs1UIiWEcO4XNSFx5d8pAVJ9kVQLjHwdguzv01cC-BRElrIJ-7DLPN3fLxG1XxI5HaocCCb8Jvu1hvWUbKyGSyi08owgmIrDzE_BOBiVlK8CyYtx6yMi1XO5O6VQ=w250-no"
 alt: "Screenshot from Hacktoberfest 2022 page describing low-code and no-code contributions that would count for credit in writing, design and advocacy."
 tags: ["docs", "open source"]
 ---
