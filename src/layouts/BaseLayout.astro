@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon';
 import '../styles/global.css';
 import '../styles/nav.css';
 import birdtoggle from '../assets/birdtoggle.webp';
@@ -111,19 +111,22 @@ const imageAlt = alt ?? site.image.alt;
                                 <div class="social-links social">
                                   <span style="display: none;">Twitter</span>
                                   <a href="https://twitter.com/sarah11918"><Icon name="twitter-fill" fill="#addbff" size="20" />
-                                      
-                                  <span style="display: none;">Flickr</span>
-                                  <a href="https://flickr.com/sarahrainsberger"><Icon name="flickr-fill" fill="#addbff" size="20" /></a>
-                      
-                                  <span style="display: none;">GitHub</span>
-                                  <a href="https://github.com/sarah11918"><Icon name="github-fill" fill="#addbff" size="20" /></a>
-                      
+
                                   <span style="display: none;">Mastodon</span>
                                   <a href="https://mastodon.social/@sarah11918"><Icon name="mastodon-fill" fill="#addbff" size = "20" /></a>
-                      
+
+                                  <span style="display: none;">GitHub</span>
+                                  <a href="https://github.com/sarah11918"><Icon name="github-fill" fill="#addbff" size="20" /></a>
+
                                   <span style="display: none;">YouTube</span>
                                   <a href="https://www.youtube.com/sarahrainsberger"><Icon name="youtube-fill" fill="#addbff" size = "20" /></a>
-                              </div>
+
+                                  <span style="display: none;">Flickr</span>
+                                  <a href="https://flickr.com/sarahrainsberger"><Icon name="flickr-fill" fill="#addbff" size="20" /></a>
+
+                                  <span style="display: none;">Email</span>
+                                  <a href="/contact/"><Icon name="mdi:envelope" fill="#addbff" size="20" /></a>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -140,38 +143,30 @@ const imageAlt = alt ?? site.image.alt;
         <div style="flex-grow:1"></div>
 
         <footer style="margin-top:0.25em">
-        <!-- <div class="social-links social-footer">
+
+          <div class="social-links social-footer">
             <span style="display: none;">Twitter</span>
-            <a href="https://twitter.com/sarah11918"><Icon.TwitterLogo fill="#addbff" size="20" />
-                
-            <span style="display: none;">Flickr</span>
-            <a href="https://flickr.com/sarahrainsberger"><Icon.Camera fill="#addbff" size="20" /></a>
+            <a href="https://twitter.com/sarah11918"><Icon name="twitter-fill" fill="#addbff" size="20" />
+
+            <span style="display: none;">Mastodon</span>
+            <a href="https://mastodon.social/@sarah11918"><Icon name="mastodon-fill" fill="#addbff" size = "20" /></a>
 
             <span style="display: none;">GitHub</span>
-            <a href="https://github.com/sarah11918"><Icon.GitHubLogo fill="#addbff" size="20" /></a>
-
-            <span style="display: none;">CodeSandbox</span>
-            <a href="https://codesandbox.io/u/sarah11918"><Icon.CodeSandboxLogo fill="#addbff" size = "20" /></a>
+            <a href="https://github.com/sarah11918"><Icon name="github-fill" fill="#addbff" size="20" /></a>
 
             <span style="display: none;">YouTube</span>
-            <a href="https://www.youtube.com/sarahrainsberger"><Icon.Video fill="#addbff" size = "20" /></a>
-        </div> -->
-        <div class="social-links social-footer">
-          <span style="display: none;">Twitter</span>
-          <a href="https://twitter.com/sarah11918"><Icon name="twitter-fill" fill="#addbff" size="20" />
-              
-          <span style="display: none;">Flickr</span>
-          <a href="https://flickr.com/sarahrainsberger"><Icon name="flickr-fill" fill="#addbff" size="20" /></a>
+            <a href="https://www.youtube.com/sarahrainsberger"><Icon name="youtube-fill" fill="#addbff" size = "20" /></a>
 
-          <span style="display: none;">GitHub</span>
-          <a href="https://github.com/sarah11918"><Icon name="github-fill" fill="#addbff" size="20" /></a>
+            <span style="display: none;">Flickr</span>
+            <a href="https://flickr.com/sarahrainsberger"><Icon name="flickr-fill" fill="#addbff" size="20" /></a>
 
-          <span style="display: none;">Mastodon</span>
-          <a href="https://mastodon.social/@sarah11918"><Icon name="mastodon-fill" fill="#addbff" size = "20" /></a>
+            <span style="display: none;">Email</span>
+            <a href="/contact/"><Icon name="mdi:envelope" fill="#addbff" size="20" /></a>
 
-          <span style="display: none;">YouTube</span>
-          <a href="https://www.youtube.com/sarahrainsberger"><Icon name="youtube-fill" fill="#addbff" size = "20" /></a>
-      </div>
+          </div>
+
+      
+
             <p><Icon name="rocket-launch-outline-rounded" size="20"/> <a class="footer-link" href="http://astro.build">#BuiltWithAstro</a> <Icon name="rocket-launch-outline-rounded" size="20"/> by <a class="footer-link" href="https://www.twitter.com/sarah11918">@sarah11918</a> on a Chromebook with <a class="footer-link" href="https://twitter.com/search?q=(%23NoLocalDevEnvironment)&src=typed_query">#NoLocalDevEnvironment</a></p>
       <p><a class="footer-link" href="/astro-get-started-in-browser">Find out how to get started building with Astro in the browser!</a></p>
       

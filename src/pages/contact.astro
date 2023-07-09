@@ -1,12 +1,10 @@
 ---
-import Markdown from '@astrojs/markdown-component';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title = "Contact" >
   <main>
-    <Markdown>
-    # Contact Sarah
-    </Markdown>
+
+    <h2>Contact Sarah</h2>
 
     <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
         <p class="hidden">
@@ -28,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p>
             <button type="submit">Send</button>
         </p>
-</form>
+    </form>
 
   </main>
 </BaseLayout>
