@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import jay from '../assets/bestjay-1.jpg';
+import jay from '~/assets/bestjay-1.jpg';
+import { Image } from 'astro:assets';
 ---
 <BaseLayout title = "HomePage">
   <main>
     <h1>Sarah Rainsberger</h1>
-    <img src={jay.src} alt="A blue jay diving towards a peanut." />
+    <Image src={jay} alt="A blue jay diving towards a peanut." />
     <p>Sarah photographs birds</p>
     <p class="bottom">...and codes entirely in the cloud, with no local development environment.</p>
   </main>
