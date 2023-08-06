@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
+import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css';
 import '../styles/nav.css';
 import birdtoggle from '../assets/birdtoggle.webp';
@@ -28,7 +29,7 @@ const imageAlt = alt ?? site.image.alt;
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content={title}>
         <title>{formattedTitle}</title>
-
+        <ViewTransitions /> 
         <meta property="og:url" content = {url}>
         <meta property="og:type" content = "website">
         <meta property="og:title" content = {formattedTitle}/>
