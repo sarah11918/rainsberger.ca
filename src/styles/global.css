@@ -81,9 +81,20 @@ a.experiment:hover {
 }
 
 .giscus-frame {
+  margin-top: 40px;
   background-color: #e3eef7;
-  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 1.5em;
 }
+
+.feedback {
+  background-color:#e3eef7;
+  border-radius: 2em;
+  margin-bottom: 1em;
+}
+
+
 
 
 code:not([class*="language"]){
@@ -204,7 +215,8 @@ a.summary-title:hover{
 }
 
 .resp-sharing-button--twitter {
-  background-color: #55acee
+  background-color: #55acee;
+  color: black;
 }
 
 .resp-sharing-button--twitter:hover {
