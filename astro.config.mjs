@@ -14,10 +14,6 @@ const remarkExpressiveCodeOptions = {
 export default defineConfig({
   site: 'https://rainsberger.ca',
   integrations: [react(), svelte(), vue(),],
-  experimental: {
-    assets: true,
-    viewTransitions: true
-   },
    markdown: {
     remarkPlugins: [
       // The nested array structure below is used

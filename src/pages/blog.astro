@@ -15,7 +15,7 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - D
       <h2> Recent Blog Posts </h2>
       <br />
       <div>
-      {sortedPosts.slice(0, 2).map((post) => {
+      {sortedPosts.slice(0, 3).map((post) => {
         return (
         <article>
           <img src={post.frontmatter.hero} alt={post.frontmatter.alt} width="250"><a href={post.url} class="summary-title"><h3>{post.frontmatter.title}</h3></a>
