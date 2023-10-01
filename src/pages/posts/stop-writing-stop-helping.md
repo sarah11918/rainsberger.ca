@@ -229,43 +229,47 @@ We're going to take things one step further and make your docs even more helpful
 
 This is also called Information Architecture, and you can get into things like "signposts", "escape hatches/off ramps". These are all the structural things we add to our documentation to help people quickly and easily situate themselves and move around.
 
-Remember that a lot of people will enter your documentation via a web search, and not necessarily "on page one" [screenshot of book: every page is page one]. When someone finds you, can they get where they need to go before they lose hope.
+Remember that a lot of people will enter your documentation via a web search, and not necessarily "[on page one](https://everypageispageone.com/)." When someone finds you, can they get where they need to go before they lose hope? The good news, if there's only one page, they can't be on the wrong page.
 
-The good news, if there's only one page, they can't be on the wrong page [thinking meme].
+![](../../assets/pageone.png)
 
-I'm serious! If you don't know how to structure your content, there is nothing wrong with one huge README to start! I mean, a table of contents would be nice? A logical order or flow helps. Putting "getting started" closer to the top and "removing your data and deleting your account" closer to the bottom kind of makes sense to me?
+I'm serious! If you don't know how to structure your content, there is nothing wrong with one huge README to start! I mean, a table of contents would be nice? Putting "getting started" closer to the top and "removing your data and deleting your account" closer to the bottom kind of makes sense to me?
 
-Here's where a framework like Diataxis comes in: by identifying parts of your documentation by **content type**, you can logically group sections of your docs. 
+Here's where a framework like [Diataxis](https://diataxis.fr) comes in: by identifying parts of your documentation by **content type** and **reader goal**, you can logically group sections of your docs. 
 
 If the only reason docs exist is to be HELPFUL, to SOMEONE, trying to DO SOMETHING, then the first start of organizing your content is thinking about what your reader needs help doing, and making sure you can direct them to the material that actually helps them. e.g.:
 
-- If they are coming to quickly look up a reference value, like a property name or config option, make sure they don't get stuck in your beginner tutorial
-- If they want to learn about what you project is, and what needs it solves, don't make them get stuck in implementation details
+- If they are coming to quickly look up a reference value, like a property name or config option, make sure they don't get stuck in your beginner tutorial!
+- If they want to learn about what you project is, and what needs it solves, don't make them get stuck in implementation details!
 
 But the key thing is, if someone is not reading your docs like a book, top-to-bottom, first-page to last-page, do you have a plan for how will they find your clear, correct information?
 
 Action item:
+
 - go to literally any random point in your documentation, and imagine you are a reader who is not in the right place to get the info you need for a particular goal. Think about how your docs could direct them there, quickly and accurately.
-- Is this solved by a TOC? a search widget? a "How to read these docs" page? an internal link? a "not what you're looking for" UI component.
-- If you have multiple pages or files, do the titles accurately represent the content? Does your content live under the title you'd expect.
+- Is this solved by a TOC? a search widget? a "How to read these docs" page? an internal link?
+- If you have multiple pages or files, do the titles accurately represent the content? Does your content live under the title you'd expect?
 
-NEW MVD SLIDE
+So, at this point, I've now basically said: Don't lie (and, delete any lies), and don't hide stuff (if you have to, throw everything on a single page. Good news, CTRL+F works for everyone!).
 
-So, at this point, I've now basically said: Don't lie (delete any lies), and don't hide stuff (if you have to, throw everything on a single page. Good news, CTRL+F works for everyone!).
-
-I'm pretty sure this is STILL a bar you can reach!
+I'm pretty sure this is STILL a bar for docs that should make you comfortable!
 
 If every statement in your docs is true, and people can find, read and understand what they mean... Congratulations! You have Min Viable Docs! (*whispers If you have to, you can stop now*)
+
+![](../../assets/mvd.png)
 
 But, of *course*, there *are* characteristics of good docs, and there are some pretty well-established anti-patterns.
 
 There's no shortage of talks on "how to write good documenation" that go into specifics, and I DO recommend you check out some great ones if you want to get better at writing! But that can get overwhelming and we already know that WRITING is secondary to HELPING.
 
+![](../../assets/resources.png)
+
 - It might feel like there's a scary Docs Police waiting to criticize you and that there aer a lot of potential failure pitfalls.
 - Instead of thinking of these as things to worry about getting wrong, think of them as things that you DON'T have to worry about; things NOT TO DO because they are NOT YOUR JOB as a helper. 
 - These things "thou shalt not do" actually REMOVE pressure and responsibility, and are guard rails to keep you focused on a productive path towards helping.
 
-e.g. Bun example
+
+![](../../assets/boo.png)
 
 So, you may have seen this social media post. I absolutely love it, because it perfectly demonstrated everything we'd been talking about here.
 
@@ -282,11 +286,14 @@ This edit is me freeing the OP from the responsibility to:
 
 Similarly, many other "Docs 101 Don'ts" are actually "don't worry abouts!" 
 
+![](../../assets/we.png)
 
 1. Don't use "we", because you're not sitting there with your potentially frustrated reader
     - This frees you from the extra work of checking that all your we/us/our/let's all agree. You know what's super easy to check? You and your.
     - Using "you" also naturally puts the emphasis on your reader, and what they are doing. It guides you to thinking about helping THEM. (What might THEIR set up look like? instead of writing "our" which can trick you into thinking about your OWN context or situation.)
     - Often, these instructions work without any "you" at all, and become even clearer.
+
+![](../../assets/should.png)
 
 2. Don't use "should" - decide whether your reader MUST do something (mandatory), "could optionally choose to" (only when a true choice!) etc.
     - Again, sounds like a rule we just made up! But I guarantee you that we are freeing you from feedback from the confused reader!
@@ -299,9 +306,9 @@ ACTION ITEMS:
 - Don't stress out about writing rules, but embrace them as telling you things that aren't your responsibility!
 - Pick one or two (I suggest "we" and "should"), or just read through your docs looking for things that aren't your responsibility, and remove them!
 
----- 
 If docs' only purpose is to be helpful, then the existence of docs is a PROMISE OF HELP. 
 
+![](../../assets/promisetohelp.png)
 
 If you want to up your docs game...
 
@@ -319,3 +326,7 @@ And The best help is CONTEXTUAL: it is FOR someone who is trying to DO something
 - don't overwhelm. Less is always more.
 - You can probably improve your docs RIGHT NOW by *deleting*, not writing more!
     - delete words like "should"; delete outdated or unmaintained docs, even if you can't yet replace them; delete entire pages if you are afraid people won't find them, and put everything on one page if you need to!
+
+![](../../assets/dontwritehelp.png)
+
+I hope I've been able to help you feel a little more comfortable helping your readers through your docs!
