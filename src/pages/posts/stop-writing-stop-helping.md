@@ -63,9 +63,9 @@ You might have said, "to tell people how to use the project" or "to show what th
 
 I would argue, the sole purpose of documentation, the only reason it exists, is to be helpful.
 
-**internal docs:** help with cross-team collaboration and onboarding
-**external docs:** help people understand, evaluate and use your project
-**open source docs:** help people contribute to your project
+- **internal docs:** help with cross-team collaboration and onboarding
+- **external docs:** help people understand, evaluate and use your project
+- **open source docs:** help people contribute to your project
 
 ![](../../assets/typesofdocs.png)
 
@@ -83,6 +83,8 @@ What if I ask instead, "Are your docs *helpful*"?
 
 For many people, I think that second question feels different.
 
+![](../../assets/goodhelpful.png)
+
 Change the question you ask yourself from....
 
 "Are my docs 'good'?" 
@@ -94,17 +96,17 @@ Change the question you ask yourself from....
  "Are my docs 'helpful'?"
 - a more objective measure
 - don't need to know or care about "docs theory"
-- Focused outward, on other people: what do they need
+- Focused outward, on other people: what do they need?
 
 Because remember: YOU ARE the foremost expert on your project, and you are the BEST person to help! 
-
 
 Changing the question you ask will immediately put you on the path to "better" docs... more helpful docs!
 
 Notice that this ALSO changed the task of making docs from primarily a *writing* task to a *helping* task!
 
-
 ## "Are your docs helpful?" 
+
+![](../../assets/areyourdocshelpful.png)
 
 So how do we answer this question?
 
@@ -120,7 +122,6 @@ Is this helping someone...
 - avoid common pitfalls
 - keep up with the latest changes in my project, so they can successfully update *their* project
 
-NEW SLIDE CHICADEE
 Evaluating whether your docs are
 - HELPFUL
 - helpful TO SOMEONE
@@ -128,7 +129,10 @@ Evaluating whether your docs are
 
 ... will get you further, faster, than any other single docs intervention.
 
-NEXT SLIDE
+![](../../assets/docsmustbehelpfulto.png)
+
+![](../../assets/tosomeoneforsomething.png)
+
 Your docs can only be helpful **to someone** and that someone... 
 
 Helpful TO SomeONE WHO IS:
@@ -169,9 +173,9 @@ They also need to help someone **do something**:
 - Convince (themselves, someone else)
 - Solve a business problem or technical challlenge
 
+But, docs should ultimately be helpful at getting people OUT of docs, and back into (using) your project.
 
-
-Docs should ultimately be helpful at getting people OUT of docs, and back into (using) your project.
+![](../../assets/outofdocs.png)
 
 You probably already have an idea right now of something you could add to or change in your existing docsto make them **helpful**. Helpful may not feel THAT MUCH more concrete or specific than "good", but I guarantee you, it is.
 
