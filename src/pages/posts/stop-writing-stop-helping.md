@@ -8,12 +8,11 @@ description: Good docs can be the difference between a happy, successful user of
 slug: stop-writing-start-helping
 tags: ["docs", "open source"]
 ---
+*(approximate transcript below, in "speaker notes" formatting rather than properly written, with some slides sprinkled in)*
 
 I'm going to ask a question for and we'll get back to the answer a little later.
 
 "Are your docs... good?"
-
-**SLIDE**
 
 Whether your current docs are...
 - a README
@@ -26,34 +25,37 @@ Whether your current docs are...
 
 ... they can *always* get better!
 
-Not what you wanted to hear, right? Now, this is a scary, daunting, overwhelming fact... OR... is it a COMFORTING fact that "docs are never done"... so don't expect them to be! You'll never get there! You CAN'T get there.
+Not what you wanted to hear, right? This actually sounds pretty overwhelming... OR... is it a COMFORTING fact that "docs are never done"... so don't expect them to be! You'll never get there! You CAN'T get there.
 
-You don't have to WORRY about getting there.
+**You don't have to WORRY about getting there.**
 
-With docs, you CANNOT, must not, let "the perfect" be the enemy of:
+![](../../assets/docsneverdone.png)
+
+With docs, you CANNOT, you must not, let "the perfect" be the enemy of:
 - the good.
 - the good *enough*.
-- the #NWTWWHB.
+- the #NWTWWHB. (Not worse than what we had before)
 
-MANY CLICKS!
 My name is Sarah, and I’m the docs lead at Astro.
 
-I hope in just a few minutes' time, you'll see how achievable "better" docs are
-- even without:
-    - ... a technical writer
-    - ... a team of volunteers
-    - ... writing experience
-    - ... a lot of time
+I hope in just a few minutes' time, you'll see how achievable "better" docs are, even without:
 
-ROCK SLIKE
-- whether you're:
-    - ... crafting your very first README
-    - ... adding the changeset for your next PR
-    - ... preparing a guide for using a new feature
-    - ... starting to think about redesigning your entire documentation site (slide: Starlight)
+- ... a technical writer
+- ... a team of volunteers
+- ... writing experience
+- ... a lot of time
+
+Whether you're:
+
+- ... crafting your very first README
+- ... adding the changeset for your next PR
+- ... preparing a guide for using a new feature
+- ... starting to think about redesigning your entire documentation site (hint: Starlight!)
  
   
 I'm going to make your docs better, I'm going to make YOU a better, more confident docs writer, without doing much WRITING at all!
+
+![](../../assets/whyhavedocs.png)
 
 Why do projects have documentation? Why do *you* have docs, if you do, for your project?
 
@@ -65,12 +67,17 @@ I would argue, the sole purpose of documentation, the only reason it exists, is 
 **external docs:** help people understand, evaluate and use your project
 **open source docs:** help people contribute to your project
 
+![](../../assets/typesofdocs.png)
+
 Documentation even helps **you** as you're building, making design decisions, learning, and leaving yourself notes.
 
-Documentation is... a source of truth, docs is support, docs is record-keeping, docs is even marketing, promotion and community building ... but ultimately docs **exist** to *help*.
+Documentation is... a source of truth, docs is support, docs is record-keeping, docs is even marketing, promotion and community building ... 
+
+![](../../assets/docsis.png)
+
+... but ultimately docs **exist** to *help*.
 
 Remember when I asked at the beginning, "Are your docs 'good'?" How did that make you feel? Was that an easy question to answer?
-
 
 What if I ask instead, "Are your docs *helpful*"?
 
