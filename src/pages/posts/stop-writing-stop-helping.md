@@ -177,7 +177,7 @@ But, docs should ultimately be helpful at getting people OUT of docs, and back i
 
 ![](../../assets/outofdocs.png)
 
-You probably already have an idea right now of something you could add to or change in your existing docsto make them **helpful**. Helpful may not feel THAT MUCH more concrete or specific than "good", but I guarantee you, it is.
+You probably already have an idea right now of something you could add to or change in your existing docsto make them **helpful**.
 
 But let's go even further, and **define helpful documentation**:
 
@@ -187,40 +187,36 @@ But let's go even further, and **define helpful documentation**:
 
 If docs are factually wrong, if they're misleading, if they're outdated, if they're correct but so confusing you'd never know it... they are not correct. They are WRONG. 
 
-> Incomplete documentation is not a crime. It's an invitation! (Me!)
+Now, when I say "correct", I do not mean **complete/comprehensive**.
 
-Now, when I say "correct", I do not mean **complete/comprehensive**…
-In fact, you might have some existing documentation that …. Isn’t really helping anyone do anything!
+In fact, you might have some existing documentation that . . . Isn’t really helping anyone do anything! 
 
-Compare reader feedback for **incorrect** docs vs **incomplete** docs: 
-Incorrect docs: "This example doesn't work for me!"
-Incomplete docs: "Hey, I noticed you don't have an example of..."
-
-If you don't have open source documentation, or a way for people to contribute, then their feedback is at least a roadmap for you to follow and prioritize what's missing that's actually important.
+![](../../assets/incorrectincomplete.png)
 
  Action Items:
+
 - Read every statement in your docs for ACCURACY
 - Or, if you're starting fresh, ONLY WRITE TRUE STATEMENTS
 - Go through each part of your docs and identify WHO this helps, and WHAT it helps them do
-- less is more: both in style AND in content
-- have you added EXTRA content that HIDES the good stuff, and makes it LESS clear what the reader does/doesn’t need to know?
-- Use clear, simple language: No one ever complained, "Gee, these docs are just too easy to read!"
+- Less is more: both in style AND in content
+- Have you added EXTRA content that HIDES the good stuff, and makes it LESS clear what the reader does/doesn’t need to know?
+- Use clear, simple language: No one ever complained, "Gee, these docs are just [too easy to read](https://vimeo.com/238673931#t=2045s)!"
+
+![](../../assets/tooeasytoread.png)
 
 If something sounds convoluted, overwhelming, or you're not sure whether it's entirely clear and correct, and you can't immediately see how to make it better... REMOVE IT: 
 
-> "No documentation means I go look somewhere else for information. Incorrect documentation means I waste my time, get angry at you, and transfer that bad impression to your project."
+> *"No documentation means I go look somewhere else for information. Incorrect documentation means I waste my time."* - Mason Egger
 
 Incorrect docs: reduce credibility, make people frustrated enough to stop using your project, and choose another; if your users can't be successful, then they do NOT use your project; they DON'T spread word of mouth (at least, not the good kind), they don't create items themselves that showcase your project, and they don't contribute back and improve your project.
 
-Where we are now:
+If it's not clear, and correct... delete it! I am giving you permission! It wasn't helping you anyway! It was frustrating people trying to use your project and potentially generating ill will and bad vibes!
 
-So, basically all I've said is that every line in your docs must be... true? (And, "clearly" true.) Uh, I THINK THAT'S A BAR YOU CAN HIT!
-
-If it's not clear, and correct... delete it! I am giving you permission! It wasn't helping you anyway! It was frustrating people trying to use your project and potentially generating ill will and bad vibes! (Fun fact: writers love deleting lines as much as developers do.)
+CHECK IN: Congratulations! You've made your docs better and you haven't written a single thing!
 
 If you're worried you might have deleted something important, it's fine. It's the internet! Someone will tell you.
 
-CHECK IN: Congratulations! You've made your docs better and you haven't written a single thing!
+![](../../assets/wrongoninternet.png)
 
 We're going to take things one step further and make your docs even more helpful:
 
