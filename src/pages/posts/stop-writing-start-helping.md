@@ -5,8 +5,8 @@ author: Sarah
 date: '2023-10-05'
 pubDate: '2023-10-05'
 description: Good docs can be the difference between a happy, successful user of your project and ... a happy, successful user of *someone else's* project. But documentation is often a task left to people who don't feel comfortable writing it. This talk presented at ViteConf 2023 presents a new way to think about "writing good docs" and some action items that will immediately improve any existing documentation... without doing any writing at all!
-hero: "https://rainsberger.ca/_astro/docsmustbehelpfulto.61a70241_1ujg6e.webp"
-alt: a flying chickadee with the words docs must be helpful to someone for something
+hero: "https://lh3.googleusercontent.com/pw/ADCreHehRLLe7wFRL9gSP9JMuv6F0D4w57Af476I6Uz1yu8BftF8k1XQAK6yxKQRjdncJo8KNafgkfXeYaozza2nWBNY3NsM0sK28GhMzNHEq1RRdjt-K9dmzGdV6DTPOnZTF9PlTku4hMf6frbYEtkzomNSBg=w250-no"
+alt: "A blue jay sitting on a branch with head tilted asking the question Are your docs helpful?"
 slug: stop-writing-start-helping
 tags: ["docs", "open source"]
 ---
