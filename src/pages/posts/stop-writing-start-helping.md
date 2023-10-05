@@ -10,7 +10,7 @@ alt: "A blue jay sitting on a branch with head tilted asking the question Are yo
 slug: stop-writing-start-helping
 tags: ["docs", "open source"]
 ---
-*(approximate transcript below, in "speaker notes" formatting rather than properly written, with some slides sprinkled in)*
+*(approximate transcript below, in "speaker notes" formatting rather than properly written, with some slides sprinkled in and [resources and references](#references-and-resources) at the end)*
 
 I'm going to ask a question for and we'll get back to the answer a little later.
 
@@ -350,3 +350,13 @@ And The best help is CONTEXTUAL: it is FOR someone who is trying to DO something
 ![A shiny black and purple grackle amid the words Don't write, help: clear & correct; discoverable; navigable; contextual; for someone; to do something; less is more](../../assets/dontwritehelp.png)
 
 I hope I've been able to help you feel a little more comfortable helping your readers through your docs!
+
+## References and Resources
+
+- [Diataxis](https://diataxis.fr)
+- [Talk - Mason Egger: Write Docs Devs Love: Ten Tips To Level Up Your Tech Writing](https://www.youtube.com/watch?v=9WobKoE9OPI)
+- [Talk - Ashley Bischoff: “1Up Your Writing with Plain Language” at Fronteers Conference 2017](https://vimeo.com/238673931#t=2045s)
+- [Book - Docs for Developers](https://docsfordevelopers.com/)
+- [Book - Write Useful Books](https://writeusefulbooks.com/)
+- [Book - Every Page is Page One](https://xmlpress.net/publications/eppo/)
+- [Audio - Making Documentation Developers Love](https://www.youtube.com/watch?v=YW4IfoJM30g)
