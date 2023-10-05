@@ -6,6 +6,7 @@ const postURL = `https://rainsberger.ca/posts/${content.slug}`
 
 //    <RelatedPosts content={content} />
 ---
+<style is:global>img{max-width:400px;max-height:200px;}</style>
 <BaseLayout title = {content.title} hero = {content.hero} description = {content.description} postURL={postURL} alt = {content.alt}>
   <main>
     <p><em>{content.description}</em></p>
