@@ -5,6 +5,8 @@ author: Sarah
 date: '2023-10-05'
 pubDate: '2023-10-05'
 description: Good docs can be the difference between a happy, successful user of your project and ... a happy, successful user of *someone else's* project. But documentation is often a task left to people who don't feel comfortable writing it. This talk presented at ViteConf 2023 presents a new way to think about "writing good docs" and some action items that will immediately improve any existing documentation... without doing any writing at all!
+hero: "https://rainsberger.ca/_astro/docsmustbehelpfulto.61a70241_1ujg6e.webp"
+alt: a flying chickadee with the words docs must be helpful to someone for something
 slug: stop-writing-start-helping
 tags: ["docs", "open source"]
 ---
@@ -29,7 +31,7 @@ Not what you wanted to hear, right? This actually sounds pretty overwhelming... 
 
 **You don't have to WORRY about getting there.**
 
-![](../../assets/docsneverdone.png)
+![ A version of the Drake/woman two square meme with two blue jays, one disliking the statement Docs Are Never Done with the second jay looking intrigued at the same sentence.](../../assets/docsneverdone.png)
 
 With docs, you CANNOT, you must not, let "the perfect" be the enemy of:
 - the good.
@@ -55,7 +57,7 @@ Whether you're:
   
 I'm going to make your docs better, I'm going to make YOU a better, more confident docs writer, without doing much WRITING at all!
 
-![](../../assets/whyhavedocs.png)
+![A small sparrow standing on a bridge railing amid seeds with an upturned, confused head position.](../../assets/whyhavedocs.png)
 
 Why do projects have documentation? Why do *you* have docs, if you do, for your project?
 
@@ -65,15 +67,15 @@ I would argue, the sole purpose of documentation, the only reason it exists, is 
 
 - **internal docs:** help with cross-team collaboration and onboarding
 - **external docs:** help people understand, evaluate and use your project
-- **open source docs:** help people contribute to your project
+- **open-source docs:** help people contribute to your project
 
-![](../../assets/typesofdocs.png)
+![Three blue jays standing in a row, each labelled as a different kind of docs: internal, external, open-source](../../assets/typesofdocs.png)
 
 Documentation even helps **you** as you're building, making design decisions, learning, and leaving yourself notes.
 
 Documentation is... a source of truth, docs is support, docs is record-keeping, docs is even marketing, promotion and community building ... 
 
-![](../../assets/docsis.png)
+![A small structure covered in grafitti with crows on top listing all the things docs is from the previous sentence.](../../assets/docsis.png)
 
 ... but ultimately docs **exist** to *help*.
 
@@ -83,7 +85,7 @@ What if I ask instead, "Are your docs *helpful*"?
 
 For many people, I think that second question feels different.
 
-![](../../assets/goodhelpful.png)
+![Two blue jays, one looking drab and disgruntled under the word good. The second blue jay has wings outstretched as if showing off under the word helpful](../../assets/goodhelpful.png)
 
 Change the question you ask yourself from....
 
@@ -106,7 +108,7 @@ Notice that this ALSO changed the task of making docs from primarily a *writing*
 
 ## "Are your docs helpful?" 
 
-![](../../assets/areyourdocshelpful.png)
+![""](../../assets/areyourdocshelpful.png)
 
 So how do we answer this question?
 
@@ -129,34 +131,47 @@ Evaluating whether your docs are
 
 ... will get you further, faster, than any other single docs intervention.
 
-![](../../assets/docsmustbehelpfulto.png)
+![""](../../assets/docsmustbehelpfulto.png)
 
-![](../../assets/tosomeoneforsomething.png)
+![""](../../assets/tosomeoneforsomething.png)
 
 Your docs can only be helpful **to someone** and that someone... 
 
 Helpful TO SomeONE WHO IS:
+
 - Human
-- needs/wants/desires/hopes/dreams
-- Mood
+- (With needs/wants/desires/hopes/dreams)
+- In a particular mood
+
+
 WHO HAS:
+
 - Context
-- goals/purpose
+- Goals/purpose
 - Motivations, expectations
+
+
 WITH A CERTAIN EXPERIENCE LEVEL WITH:
+
 - Code
 - The industry
 - Your project
+
+
 WITH VARYING
+
 - Language proficiencies
 - Bad experiences ("burned before")
 - Pre- or (mis) conceptions
+
+
 AND ONLY LIMITED
+
 - Attention
 - Patience
 - Time 
 - Energy
-- Resources (internet speed/cap; hardware; money)
+- Resources (internet speed/cap, hardware)
 
 They also need to help someone **do something**:
 
@@ -175,23 +190,23 @@ They also need to help someone **do something**:
 
 But, docs should ultimately be helpful at getting people OUT of docs, and back into (using) your project.
 
-![](../../assets/outofdocs.png)
+![An eagle flying away over water](../../assets/outofdocs.png)
 
 You probably already have an idea right now of something you could add to or change in your existing docsto make them **helpful**.
 
 But let's go even further, and **define helpful documentation**:
 
-1. CLEAR AND CORRECT
+## CLEAR AND CORRECT
 
-> Or in other words, if your docs are wrong, they are not helpful.
+> If your docs are wrong, they are not helpful.
 
 If docs are factually wrong, if they're misleading, if they're outdated, if they're correct but so confusing you'd never know it... they are not correct. They are WRONG. 
 
 Now, when I say "correct", I do not mean **complete/comprehensive**.
 
-In fact, you might have some existing documentation that . . . Isn’t really helping anyone do anything! 
+In fact, you might have some existing documentation that . . . isn’t really helping anyone do anything! 
 
-![](../../assets/incorrectincomplete.png)
+![Two ducks swimming, one with a cursing emoji face over its head representing incorrect docs. The second is a duckling looking up sweetly representing the friendlier reaction when you have incomplete docs, as if asking "Could you add...?"](../../assets/incorrectincomplete.png)
 
  Action Items:
 
@@ -202,13 +217,15 @@ In fact, you might have some existing documentation that . . . Isn’t really he
 - Have you added EXTRA content that HIDES the good stuff, and makes it LESS clear what the reader does/doesn’t need to know?
 - Use clear, simple language: No one ever complained, "Gee, these docs are just [too easy to read](https://vimeo.com/238673931#t=2045s)!"
 
-![](../../assets/tooeasytoread.png)
+![Screenshot of Ashley Bischoff giving a talk called 1Up Your Writing with Plain Language at Fronteers Conference 2017 and a slide that reads Because no one has ever complained that somethign was too easy to read.](../../assets/tooeasytoread.png)
 
 If something sounds convoluted, overwhelming, or you're not sure whether it's entirely clear and correct, and you can't immediately see how to make it better... REMOVE IT: 
 
 > *"No documentation means I go look somewhere else for information. Incorrect documentation means I waste my time."* - Mason Egger
 
-Incorrect docs: reduce credibility, make people frustrated enough to stop using your project, and choose another; if your users can't be successful, then they do NOT use your project; they DON'T spread word of mouth (at least, not the good kind), they don't create items themselves that showcase your project, and they don't contribute back and improve your project.
+Incorrect docs reduce credibility. They make people frustrated enough to stop using your project and choose another.
+
+If your users can't be successful, then they do NOT use your project; they DON'T spread word of mouth (at least, not the good kind), they don't create items themselves that showcase your project, and they don't contribute back and improve your project.
 
 If it's not clear, and correct... delete it! I am giving you permission! It wasn't helping you anyway! It was frustrating people trying to use your project and potentially generating ill will and bad vibes!
 
@@ -216,11 +233,11 @@ CHECK IN: Congratulations! You've made your docs better and you haven't written 
 
 If you're worried you might have deleted something important, it's fine. It's the internet! Someone will tell you.
 
-![](../../assets/wrongoninternet.png)
+![An XKCD cartoon where someone is on the computer, saying they can't come to bed yet because someone is wrong on the internet](../../assets/wrongoninternet.png)
 
 We're going to take things one step further and make your docs even more helpful:
 
-2. Navigable and Discoverable
+## Navigable and Discoverable
 
 
 - Can people move around your documentation and find what they need?
@@ -229,13 +246,15 @@ We're going to take things one step further and make your docs even more helpful
 
 This is also called Information Architecture, and you can get into things like "signposts", "escape hatches/off ramps". These are all the structural things we add to our documentation to help people quickly and easily situate themselves and move around.
 
-Remember that a lot of people will enter your documentation via a web search, and not necessarily "[on page one](https://everypageispageone.com/)." When someone finds you, can they get where they need to go before they lose hope? The good news, if there's only one page, they can't be on the wrong page.
+Remember that a lot of people will enter your documentation via a web search, and not necessarily "[on page one](https://everypageispageone.com/)." When someone finds your docs, can they get where they need to go before they lose hope?
 
-![](../../assets/pageone.png)
+The good news, if there's only one page, they can't be on the wrong page.
 
-I'm serious! If you don't know how to structure your content, there is nothing wrong with one huge README to start! I mean, a table of contents would be nice? Putting "getting started" closer to the top and "removing your data and deleting your account" closer to the bottom kind of makes sense to me?
+![A book cover titled Every Page is Page One next to the thinking, pointing at brain meme](../../assets/pageone.png)
 
-Here's where a framework like [Diataxis](https://diataxis.fr) comes in: by identifying parts of your documentation by **content type** and **reader goal**, you can logically group sections of your docs. 
+I'm serious! If you don't know how to structure your content, there is nothing wrong with one huge README to start! I mean, a table of contents would be nice? Putting "getting started" closer to the top and "removing your data and deleting your account" closer to the bottom kind of makes sense to me? But you if your readers have to look around, at least they'll know they're on the right page!
+
+Here's where a framework like [Diataxis](https://diataxis.fr) comes in: by identifying parts of your documentation by **content type** and **reader goal**, you can logically group sections of your docs and start to provide a helpful structure.
 
 If the only reason docs exist is to be HELPFUL, to SOMEONE, trying to DO SOMETHING, then the first start of organizing your content is thinking about what your reader needs help doing, and making sure you can direct them to the material that actually helps them. e.g.:
 
@@ -252,32 +271,33 @@ Action item:
 
 So, at this point, I've now basically said: Don't lie (and, delete any lies), and don't hide stuff (if you have to, throw everything on a single page. Good news, CTRL+F works for everyone!).
 
-I'm pretty sure this is STILL a bar for docs that should make you comfortable!
+This is, I think, STILL an achievable bar for docs that help your readers without any new writing!
 
-If every statement in your docs is true, and people can find, read and understand what they mean... Congratulations! You have Min Viable Docs! (*whispers If you have to, you can stop now*)
+If every statement in your docs is true, and people can find, read and understand what they mean... Congratulations! You have Minimum Viable Docs! (*whispers If you have to, you can stop now*)
 
-![](../../assets/mvd.png)
+![A sparrow on a wooden boardwalk with the title Minimum Viable Docs - Clear and Correct (no lies), Discoverable and Navigable (no hiding)](../../assets/mvd.png)
 
-But, of *course*, there *are* characteristics of good docs, and there are some pretty well-established anti-patterns.
+But, of *course*, there *are* characteristics of good docs, and there are also some pretty well-established anti-patterns.
 
 There's no shortage of talks on "how to write good documenation" that go into specifics, and I DO recommend you check out some great ones if you want to get better at writing! But that can get overwhelming and we already know that WRITING is secondary to HELPING.
 
-![](../../assets/resources.png)
+![A collage of images of various resource; talks, books, podcasts that are linked from ths post.](../../assets/resources.png)
 
 - It might feel like there's a scary Docs Police waiting to criticize you and that there aer a lot of potential failure pitfalls.
 - Instead of thinking of these as things to worry about getting wrong, think of them as things that you DON'T have to worry about; things NOT TO DO because they are NOT YOUR JOB as a helper. 
 - These things "thou shalt not do" actually REMOVE pressure and responsibility, and are guard rails to keep you focused on a productive path towards helping.
 
 
-![](../../assets/boo.png)
+![A screenshot of a pulll request suggested edit made by Sarah. The original was a very long, excited description about installing Bun, and the suggested change for docs is simply: Use the following command to install Bun, with the added note Booo... Sarah is boring!](../../assets/boo.png)
 
 So, you may have seen this social media post. I absolutely love it, because it perfectly demonstrated everything we'd been talking about here.
 
 It’s CLEAR, and CORRECT. If you’re looking for the command to install Bun, these are the words you will search for! It introduces exactly what’s coming next, and it’s not hidden in a bunch of other words.
 
-This edit is NOT me saying, "BAD OP, BAD DOCS!"
+This edit is NOT me saying, "BAD AUTHOR, BAD DOCS!"
 
-This edit is me freeing the OP from the responsibility to:
+This edit is me freeing the pull request submitter from the responsibility to:
+
 - write something clever
 - motivate the reader
 - get all the punctuation correct in longer, multi-clause sentences
@@ -286,14 +306,14 @@ This edit is me freeing the OP from the responsibility to:
 
 Similarly, many other "Docs 101 Don'ts" are actually "don't worry abouts!" 
 
-![](../../assets/we.png)
+![""](../../assets/we.png)
 
 1. Don't use "we", because you're not sitting there with your potentially frustrated reader
     - This frees you from the extra work of checking that all your we/us/our/let's all agree. You know what's super easy to check? You and your.
     - Using "you" also naturally puts the emphasis on your reader, and what they are doing. It guides you to thinking about helping THEM. (What might THEIR set up look like? instead of writing "our" which can trick you into thinking about your OWN context or situation.)
     - Often, these instructions work without any "you" at all, and become even clearer.
 
-![](../../assets/should.png)
+![""](../../assets/should.png)
 
 2. Don't use "should" - decide whether your reader MUST do something (mandatory), "could optionally choose to" (only when a true choice!) etc.
     - Again, sounds like a rule we just made up! But I guarantee you that we are freeing you from feedback from the confused reader!
@@ -308,7 +328,7 @@ ACTION ITEMS:
 
 If docs' only purpose is to be helpful, then the existence of docs is a PROMISE OF HELP. 
 
-![](../../assets/promisetohelp.png)
+![Quote from the book Write Useful Books: Readers aren't buying your useful book for its storytelling or suspense.they are buying it as the solution to a problem or path toward a goal.  They'll stay engaged for as long as you are regularly and consistently delivering on that promise. I recently threw away a book I had been very excited to buy and read... the authors seemed to believe that their job ws to entertain me rather than delivering the value I had literally bought and paid for.](../../assets/promisetohelp.png)
 
 If you want to up your docs game...
 
@@ -327,6 +347,6 @@ And The best help is CONTEXTUAL: it is FOR someone who is trying to DO something
 - You can probably improve your docs RIGHT NOW by *deleting*, not writing more!
     - delete words like "should"; delete outdated or unmaintained docs, even if you can't yet replace them; delete entire pages if you are afraid people won't find them, and put everything on one page if you need to!
 
-![](../../assets/dontwritehelp.png)
+![A shiny black and purple grackle amid the words Don't write, help: clear & correct; discoverable; navigable; contextual; for someone; to do something; less is more](../../assets/dontwritehelp.png)
 
 I hope I've been able to help you feel a little more comfortable helping your readers through your docs!
