@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Stop Writing; Start Helping
+title: Stop writing docs. Start helping!
 author: Sarah
 date: '2023-10-05'
 pubDate: '2023-10-05'
