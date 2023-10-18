@@ -15,7 +15,7 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - D
       <h2> Recent Blog Posts </h2>
       <br />
       <div>
-      {sortedPosts.slice(0, 4).map((post) => {
+      {sortedPosts.slice(0, 5).map((post) => {
         return (
         <article>
           <img src={post.frontmatter.hero} alt={post.frontmatter.alt} width="250"><a href={post.url} class="summary-title"><h3>{post.frontmatter.title}</h3></a>
@@ -28,11 +28,11 @@ const sortedThoughts = allThoughts.sort((a, b) => Date.parse(b.data.pubDate) - D
         </article>
       )})}
       </div>
-      <h4><a href="/posts">See full post archive ...</a></h4>
+      <h2><a href="/posts">See full post archive ...</a></h2>
     </div>
 
-    <div class="thoughts" style="margin-top: 3em;">
-      <h2>Recent Thoughts</h2>
+    <div class="thoughts" style="margin-top: 3em; border: 2px solid black; padding:1em;">
+      <h2>Experimental! Recent Thoughts</h2>
       <div>
         {
           sortedThoughts.slice(0, 5).map((post) => {
