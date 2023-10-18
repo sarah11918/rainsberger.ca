@@ -8,7 +8,7 @@ description: From a 7 year-old Chromebook to an Android tablet to a Linux deskto
 hero: "https://lh3.googleusercontent.com/pw/ADCreHfB7oEHdl71ZsRMOB5nzx89iAL_MiiACB1FkizYmIpPV4StnQcFijBBWs3ScO0M0mxLjCLJacDLblnWE5SgeWLoGh3GoZHKYZEM_jU0r1VWzJ_ieOV4G7akOkGKyXdlPFGGFmfi4TJXdbmgGjEdv0-iTA=w250-no"
 alt: "A screenshot of the Gitpod logo as a workspace is starting up."
 slug: build-with-astro-on-gitpod
-tags: ["docs", "open source", "no local dev environment"]
+tags: ["docs", "open source", "astro", "no local dev environment"]
 ---
 I spend much of my day making sure people can get started and build with [Astro](https://astro.build). I am regularly working in several Astro websites: this personal site, Astro Docs, Astro Docs Docs... 
 
