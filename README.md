@@ -1,2 +1,1 @@
-# rainsberger.ca
-www.rainsberger.ca personal website built with Astro 🚀
+A past version of my personal website built with Astro 🚀
